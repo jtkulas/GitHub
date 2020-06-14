@@ -1,0 +1,66 @@
+---
+title: "GitHub"
+author: "Kulas Renata Casey Noel"
+date: "6/14/2020"
+output:
+  xaringan::moon_reader:
+    seal: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+![](https://media.giphy.com/media/EXHHMS9caoxAA/giphy.gif)
+
+## Learning to use GitHub through R Studio
+
+Summer 2020 Team: 
++ Renata
++ Casey
++ Noel 
++ Kulas
+
+---
+
+## Goals
+
+1. ~~figure out how to integrate GitHub and R Studio~~
+2. connect individual accounts to shared projects
+3. figure out branches and forks
+    + ...and how to use them
+4. learn how to ask for a task to be completed
+5. learn how to approve tasks
+6. share what we've learned with the larger group (if interested)
+
+![](https://cdn.pixabay.com/photo/2017/10/06/10/26/fall-foliage-2822593_1280.jpg)
+
+---
+
+## Progress so far...
+
+1. We have [located a site that walks-through the setup](https://happygitwithr.com/install-git.html) from within RStudio.
+
+![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
+
+---
+
+## Progress so far...
+
+We have changed .Rmd files within online GitHub repositories via local editing, commits, and pushes.
+
+![](commit.png)
+
+---
+
+## Lingering questions...
+
+What are all of these files? (they keep multiplying)
+
+![](whatdis.PNG)
+
+
+---
+
+## How to
+
+We should have some "how to" slides so others can use
