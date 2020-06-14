@@ -26,7 +26,7 @@ Summer 2020 Team:
 
 1. ~~figure out how to integrate GitHub and R Studio~~
 2. connect individual accounts to shared projects
-3. figure out branches and forks
+3. [figure out branches and forks](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
     + ...and how to use them
 4. learn how to ask for a task to be completed
 5. learn how to approve tasks
@@ -64,3 +64,5 @@ What are all of these files? (they keep multiplying)
 ## How to
 
 We should have some "how to" slides so others can use
+
+![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
