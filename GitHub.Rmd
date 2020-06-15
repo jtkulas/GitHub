@@ -48,6 +48,8 @@ Summer 2020 Team:
 
 We have changed .Rmd files within online GitHub repositories via local editing, commits, and pushes.
 
+[Pretty Good Overview](https://www.youtube.com/watch?v=KjLycV1IWqc)
+
 ![](commit.png)
 
 ---
@@ -73,8 +75,4 @@ What are all of these files? (they keep multiplying)
 ## How to
 
 We should have some "how to" slides so others can use
-<<<<<<< HEAD
-=======
 
-![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
->>>>>>> 0b24a6533b5672b4342d3b3bb28b01854b052135
