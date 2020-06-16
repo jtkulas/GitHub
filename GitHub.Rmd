@@ -52,12 +52,21 @@ We have changed .Rmd files within online GitHub repositories via local editing, 
 
 ---
 
+## Forking vs. branching
+
+Sounds like forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated in the master branch.
+
+Duplicate (local) repositories are created when creating the initial master branch (this doesn't seem to be something unique to "forking")
+
+![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
+
+---
+
 ## Lingering questions...
 
 What are all of these files? (they keep multiplying)
 
 ![](whatdis.PNG)
-
 
 ---
 
@@ -65,4 +74,3 @@ What are all of these files? (they keep multiplying)
 
 We should have some "how to" slides so others can use
 
-![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
