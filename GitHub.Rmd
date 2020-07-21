@@ -106,6 +106,8 @@ What are all of these files? (they keep multiplying)
 
 ![](whatdis.PNG)
 
+Heya
+
 ---
 
 ## Tasks for next meeting
