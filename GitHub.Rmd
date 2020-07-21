@@ -24,10 +24,9 @@ Summer 2020 Team:
 
 ## Goals
 
-1. ~~figure out how to integrate GitHub and R Studio~~
+1. figure out how to integrate GitHub and R Studio
 2. connect individual accounts to shared projects
-3. [figure out branches and forks](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
-    + ...and how to use them
+3. figure out branches and forks (and how to use them)
 4. learn how to ask for a task to be completed
 5. learn how to approve tasks
 6. share what we've learned with the larger group (if interested)
@@ -36,29 +35,68 @@ Summer 2020 Team:
 
 ---
 
-## Progress so far...
+## How to integrate RStudio and GitHub
 
-1. We have [located a site that walks-through the setup](https://happygitwithr.com/install-git.html) from within RStudio.
+This [site](https://happygitwithr.com/install-git.html) walks-through the setup from within RStudio.
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
 
 ---
 
-## Progress so far...
+## Connecting individual accounts to shared projects (Step I)
 
-We have changed .Rmd files within online GitHub repositories via local editing, commits, and pushes.
+Invite collaborators from within the GitHub repo:
+
+![](invite.png)
+
+...you'll need their GitHub username
+
+---
+
+## Connecting individual accounts to shared projects [(Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)
+
+First access the GitHub repository url, then, within the R Studio interface follow the wizard via: File $\rightarrow$ *New Project* $\rightarrow$ Version Control $\rightarrow$ Git $\rightarrow$ paste the GitHub repository address into the "Repository URL:" window.
+
+Note that you'll also indicate a local (on your computer) location for the files...
+
+![](projectnew.png)
+
+
+---
+
+## Connecting individual accounts to shared projects (Success) 
+
+You now have a "project" that you can access from within R Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
+
+![](linked.png)
+
+---
+
+## Then what?
+
+You can now work on shared .Rmd files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository.
+
+There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
 
 ![](commit.png)
 
 ---
 
-## Forking vs. branching
+## [Forking vs. branching](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
 
-Sounds like forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated in the master branch.
-
-Duplicate (local) repositories are created when creating the initial master branch (this doesn't seem to be something unique to "forking")
+Sounds like forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch.
 
 ![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
+
+---
+
+## Defining a new branch
+
+Best practice seems to entail creating a branch within which proposed edits can be made and reviewed prior to "pulling" these changes to the master branch (the master is where the initial files were placed, but also where the final product will be located).
+
+You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of RStudio's "Environment/History" panel:
+
+![](branch.png)
 
 ---
 
@@ -68,9 +106,13 @@ What are all of these files? (they keep multiplying)
 
 ![](whatdis.PNG)
 
+Heya
+
 ---
 
-## How to
+## Tasks for next meeting
 
-We should have some "how to" slides so others can use
++ figure out push and pull
++ how to request a change
++ how to stage
 
