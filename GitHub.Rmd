@@ -14,11 +14,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Learning to use GitHub through R Studio
 
-Summer 2020 Team: 
-+ Renata
-+ Casey
-+ Noel 
-+ Kulas
+Summer 2020 Eagle I.O Team: 
++ Renata Garcia Prieto Palacios Roji [LinkedIn](https://www.linkedin.com/in/renatagppr/)
++ Casey Osorio-Duffoo [LinkedIn](https://www.linkedin.com/in/casey-osorio-duffoo/)
++ Noel D'Souza [LinkedIn](https://www.linkedin.com/in/noel-d-souza-60101a125/)
+
 
 ---
 
