@@ -21,7 +21,7 @@ Summer 2020 Eagle I.O Team:
 
 ---
 
-## Learning Objectives
+## Goals
 
 1. figure out how to integrate GitHub and R Studio
 2. connect individual accounts to shared projects
@@ -80,6 +80,15 @@ There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1
 
 ---
 
+## Using the repository
+
+Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository:
+
+![Pulling](pull.png)
+
+
+---
+
 ## [Forking vs. branching](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
 
 Sounds like forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch.
@@ -114,3 +123,17 @@ Heya
 + how to request a change
 + how to stage
 
+---
+
+## Notifications
+
+In order to recieve notification that a push has been made to a repository that you own, navigate to the repository, then indicate up to 2 e-mails that you would like to "sign-up" for... 
+
+![](notification.png)
+---
+
+## Notifications (II)
+
+If you wish to recieve notifications from a repository that you collaborate on (but do not "own"), you can select to watch that repository:
+
+![](notification2.png)
