@@ -23,13 +23,21 @@ Summer 2020 Eagle I.O Team:
 
 ## Topics covered
 
-1. How to integrate GitHub and R Studio
+1. How (and why) to integrate GitHub and R Studio
 2. Connecting individual accounts to shared projects
 3. Branches and forks (and how to use them) 
 4. How to ask for a task to be completed
 5. How to approve tasks
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg)
+---
+
+## Why you want to do this
+
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and work on projects such as [this one!](https://github.com/jtkulas/GitHub)
+
+![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
+
 
 ---
 
@@ -37,9 +45,18 @@ Summer 2020 Eagle I.O Team:
 
 You need to install "Git" onto your computer before using GitHub through RStudio.
 
-This [site](https://happygitwithr.com/install-git.html) and the following slide walk you through the setup. 
+This [site](https://happygitwithr.com/install-git.html) and the next few slides walk you through the setup. 
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
+
+---
+
+## Installing Git 
+
+Git is platform tool, which helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to website <https://git-scm.com/downloads>. Here is what the website should look like:  
+
+![Git Page](Image/Gitpage.png){width=50%}
+
 ---
 
 ## What's a "Shell"?
@@ -48,7 +65,75 @@ You're going to be asked to operate from within a "shell". A shell is an access 
 
 ![](Shell.png)
 
-...there is also a YouTube walk-through located  [here](https://youtu.be/lXwH2R4n3RQ)
+---
+## Tutorials
+
+.pull-left[
+If you're stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
+]
+
+.pull-right[
+![](https://cdn.pixabay.com/photo/2020/04/27/21/26/girl-5101875_1280.jpg)
+]
+
+---
+
+## Part 1: Connect Git to R 
+.pull-right[
+- Go to Tools in RStudio; it is between Profile and Help. 
+- Then, click on Global Options
+- Next, click on Git/SVN 
+]
+
+.pull-left[
+![](Image/Git SVN.png)
+]
+
+---
+
+## Part 2: Connect Git To R
+
+![](Image/SVN 2.jpg){width=35%}
+
+- On a windows computer, you go to "this PC"
+- Click on "Windowns (C:)"
+- Click on "Program Files Folder"
+- Click on "Git Folder"
+- Click on "bin folder"
+- Click on "git.exe"
+
+You are now connect to Github with Rstudio.
+
+---
+
+## Example of how to use it.
+
+- You will go to New Project.
+- Then, you go to verison control, and click on Git.
+- Now, you want go to Github, and click on code, then highlight the link. Like below:
+
+![](Image/Connect.png){width=65%}
+
+
+- Paste it in to repo
+
+![](Image/Repo.png){width=45%}
+
+---
+
+## Problem Solving
+
+[This error](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/) was very common, so with the current presentation, we had to bypass it via this command (in the R Studio `terminal` pane)
+
+![](Image/hardboot.png)
+
+---
+
+## Options
+
+You can set up notifications via your *global* options (associated with your account - not specific to any one repository):
+
+![Notifications](Image/notifications.png)
 
 
 ---
