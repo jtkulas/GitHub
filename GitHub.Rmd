@@ -61,7 +61,7 @@ Git is platform tool, which helps connect the website [GitHub](https://github.co
 
 ## What's a "Shell"?
 
-You're going to be asked to operate from within a "shell". A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can do so - the "Terminal" tab within RStudio is actually a "shell":
+You may be asked to operate from within a "shell" (you don't need to do so, but the recommended resource does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
 
 ![](Shell.png)
 
