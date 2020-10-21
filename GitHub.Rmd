@@ -235,16 +235,20 @@ In order to recieve notification that a push has been made to a repository that 
 
 ## Notifications (II)
 
-If you wish to recieve notifications from a repository that you collaborate on (but do not "own"), [GitHub unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seemse to be [this](https://www.youtube.com/watch?v=jssX19RsozQ)
+If you wish to recieve notifications from a repository that you collaborate on (but do not "own"), [GitHub unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [this](https://www.youtube.com/watch?v=jssX19RsozQ)
 
 ![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
 
-* Create a zzbots account
-* Connect zzbots with Github
-* Select the right repository and branch
-* Enter email address you want notifications sent to. 
-* it seems to work. 
+---
 
+## ZZbots!
+
+1. Sign up for a free [zzBots account](https://www.zzbots.com/)
+2. Connect your new zzBots account to GitHub
+3. Follow the menu to create a new bot 
+4. Indicate bot name and follow prompts (starting with "send email")
+
+![](zzbot.png)
 
 ---
 
