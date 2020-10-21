@@ -239,6 +239,13 @@ If you wish to recieve notifications from a repository that you collaborate on (
 
 ![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
 
+* Create a zzbots account
+* Connect zzbots with Github
+* Select the right repository and branch
+* Enter email address you want notifications sent to. 
+
+
+
 ---
 
 ## Watching
