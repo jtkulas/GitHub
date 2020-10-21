@@ -243,7 +243,7 @@ If you wish to recieve notifications from a repository that you collaborate on (
 * Connect zzbots with Github
 * Select the right repository and branch
 * Enter email address you want notifications sent to. 
-
+* it seems to work. 
 
 
 ---
