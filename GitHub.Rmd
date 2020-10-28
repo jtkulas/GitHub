@@ -25,19 +25,30 @@ Summer 2020 Eagle I.O Team:
 
 1. How (and why) to integrate GitHub and R Studio
 2. Connecting individual accounts to shared projects
-3. Branches and forks (and how to use them) 
+3. Pushing and pulling 
 4. How to ask for a task to be completed
 5. How to approve tasks
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg)
 ---
 
-## Why you want to do this
+## Why you want to do this 
 
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and work on projects such as [this one!](https://github.com/jtkulas/GitHub)
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and work on projects [such as this one!](https://github.com/jtkulas/GitHub/tree/development)
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 
+
+---
+## Tutorials
+
+.pull-left[
+As you navigate this presentation, if you find yourself stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
+]
+
+.pull-right[
+![](https://cdn.pixabay.com/photo/2020/04/27/21/26/girl-5101875_1280.jpg)
+]
 
 ---
 
@@ -61,20 +72,9 @@ Git is platform tool, which helps connect the website [GitHub](https://github.co
 
 ## What's a "Shell"?
 
-You may be asked to operate from within a "shell" (you don't need to do so, but the recommended resource does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
+You may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
 
 ![](Shell.png)
-
----
-## Tutorials
-
-.pull-left[
-If you're stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
-]
-
-.pull-right[
-![](https://cdn.pixabay.com/photo/2020/04/27/21/26/girl-5101875_1280.jpg)
-]
 
 ---
 
@@ -97,8 +97,6 @@ If you're stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials l
 
 Find where you downloaded "Git" and link to the location within the "*Git executable:*" window
 
-![](Image/SVN 2.jpg)
-
 - On a windows computer, you go to "this PC"
 - Click on "Windowns (C:)"
 - Click on "Program Files Folder"
@@ -106,22 +104,39 @@ Find where you downloaded "Git" and link to the location within the "*Git execut
 - Click on "bin folder"
 - Click on "git.exe"
 
-You are now connect to Github with Rstudio.
+![](Image/SVN 2.jpg)
+
 
 ---
 
-## Example of how to use it.
+## Good job!!
 
-- You will go to New Project.
-- Then, you go to verison control, and click on Git.
-- Now, you want go to Github, and click on code, then highlight the link. Like below:
+You are now connect to Github with Rstudio.
 
-![](Image/Connect.png){width=65%}
+![](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
+
+---
+
+## Now Wut?!?
+
+Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via devtools because they're hosted on GitHub, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
+
+![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
 
 
-- Paste it in to repo
+---
 
-![](Image/Repo.png){width=45%}
+## Connecting to a GitHub repository
+
+1. Go to Github, and click on code, then copy the link
+2. From within RStudio, you will go to "New Project"
+3. Go to "verison control", click on "Git"
+4. Paste the GitHub link 
+
+
+![](Image/Connect.png)
+
+![](Image/Repo.png)
 
 ---
 
@@ -190,9 +205,9 @@ Especially with shared projects, every time you access the project, make sure to
 
 ---
 
-## [Forking vs. branching](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
+## Forking vs. branching
 
-Sounds like forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch.
+Forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a couple of good descriptions located [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
 
 ![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
 
@@ -235,7 +250,7 @@ In order to recieve notification that a push has been made to a repository that 
 
 ## Notifications (II)
 
-If you wish to recieve notifications from a repository that you collaborate on (but do not "own"), [GitHub unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [this](https://www.youtube.com/watch?v=jssX19RsozQ)
+If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  ggBots](https://www.youtube.com/watch?v=jssX19RsozQ)
 
 ![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
 
@@ -249,6 +264,18 @@ If you wish to recieve notifications from a repository that you collaborate on (
 4. Indicate bot name and follow prompts (starting with "send email")
 
 ![](zzbot.png)
+---
+
+## Issues:
+
+Creating an issue, which is similar to creating a task: https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue
+How to assign an issue: https://help.github.jp/enterprise/2.11/user/articles/assigning-issues-and-pull-requests-to-other-github-users/#:~:text=Under%20your%20repository%20name%2C%20click,their%20name%20when%20it%20appears.
+
+---
+
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
 ---
 
