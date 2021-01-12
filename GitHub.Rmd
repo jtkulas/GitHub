@@ -66,7 +66,7 @@ As you navigate this presentation, if you find yourself stuck, there are also `r
 
 ## Installing Git 
 
-Git is platform tool, which helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to website <https://git-scm.com/downloads>. Here is what the website should look like:  
+Git is platform tool that helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
 
 ![Git Page](Image/Gitpage.png)
 
@@ -74,7 +74,7 @@ Git is platform tool, which helps connect the website [GitHub](https://github.co
 
 ## What's a "Shell"?
 
-You may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
+At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
 
 ![](Shell.png)
 
