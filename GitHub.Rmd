@@ -21,6 +21,7 @@ Summer 2020 Eagle I.O Team:
 + [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) Renata Garcia Prieto Palacios Roji 
 + [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) Casey Osorio-Duffoo 
 + [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) Noel D'Souza 
++ [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) John Kulas
 
 ---
 
@@ -68,7 +69,7 @@ As you navigate this presentation, if you find yourself stuck, there are also `r
 
 Git is platform tool that helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
 
-![Git Page](Image/Gitpage.png)
+![](Image/Gitpage.png)
 
 ---
 
@@ -154,7 +155,7 @@ Now you need a project to collaborate on. You can use [this current presentation
 
 You can set up notifications via your *global* options (associated with your account - not specific to any one repository):
 
-![Notifications](Image/notifications.png)
+![](Image/notifications.png)
 
 
 ---
@@ -202,7 +203,7 @@ There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1
 
 Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository:
 
-![Pulling](pull.png)
+![](pull.png)
 
 
 ---
@@ -210,6 +211,8 @@ Especially with shared projects, every time you access the project, make sure to
 ## Forking vs. branching
 
 Forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a couple of good descriptions located [here](https://youtu.be/KDUtjZHIx44?t=658) [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
+
+If you find a repository that you'd like to copy (e.g., use it as a template), then "fork".
 
 ![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
 
