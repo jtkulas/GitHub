@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ]
 
 .pull-right[
-### Summer 2020 Eagle I.O Team:
+### Summer 2020 [Eagle I.O](https://eagle-io.weebly.com/) Team:
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
@@ -63,8 +63,8 @@ This [site](https://happygitwithr.com/install-git.html) as well as the next few 
 ## Additional tutorials
 
 .pull-left[
-As you navigate this presentation, if you find yourself stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
-]
+## .fancy[As you navigate this presentation, if you find yourself stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
+]]
 
 .pull-right[
 ![](https://cdn.pixabay.com/photo/2020/04/27/21/26/girl-5101875_1280.jpg)
@@ -89,8 +89,8 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 ---
 
 ## After you've successfully installed "Git"
-
-### Part 1: Connect Git to R 
+`
+### Part 1: Connect Git to `R` 
 .pull-right[
 - Go to Tools in RStudio; it is between "*Profile*" and "*Help*". 
 - Then, click on Global Options
@@ -103,7 +103,7 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 
 ---
 
-## Part 2: Connect Git To R
+## Part 2: Connect Git To `R`
 
 Find where you downloaded "Git" and link to the location within the "*Git executable:*" window
 
@@ -281,9 +281,13 @@ In order to recieve notification that a push has been made to a repository that 
 
 ## Notifications (II)
 
-If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  ggBots](https://www.youtube.com/watch?v=jssX19RsozQ)
+.pull-left[
+If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  ggBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of ggBots limits you to only two repositories.
+]
 
+.pull-right[
 ![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
+]
 
 ---
 
