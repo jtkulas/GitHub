@@ -14,7 +14,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ## devtools::install_github("ropenscilabs/icon")
 
 ```
-![](https://media.giphy.com/media/EXHHMS9caoxAA/giphy.gif)
+.center[
+![](https://media.giphy.com/media/UTZ6OOJkAgOV37OmTZ/giphy.gif)
+]
 
 .pull-left[
 # Using GitHub through R Studio
