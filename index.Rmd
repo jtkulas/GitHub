@@ -4,6 +4,7 @@ author: "Kulas Renata Casey Noel"
 date: "6/14/2020"
 output:
   xaringan::moon_reader:
+    css: ["default", "sfah.css", "fonts.css"]
     seal: false
 ---
 
@@ -15,14 +16,18 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 ![](https://media.giphy.com/media/EXHHMS9caoxAA/giphy.gif)
 
-## Using GitHub through R Studio
+.pull-left[
+# Using GitHub through R Studio
 
-Summer 2020 Eagle I.O Team: 
-+ [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) Renata Garcia Prieto Palacios Roji 
-+ [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) Casey Osorio-Duffoo 
-+ [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) Noel D'Souza 
-+ [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) John Kulas
+]
 
+.pull-right[
+### .fancy[Summer 2020 Eagle I.O Team]:
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) Renata Garcia Prieto Palacios Roji  
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) Casey Osorio-Duffoo  
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) Noel D'Souza  
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) John Kulas
+]
 ---
 
 ## Topics covered
