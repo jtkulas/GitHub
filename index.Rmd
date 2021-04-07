@@ -7,7 +7,7 @@ output:
     css: ["default", "sfah.css", "fonts.css"]
     seal: false
 ---
-
+class: inverse
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
@@ -24,11 +24,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ]
 
 .pull-right[
-### .fancy[Summer 2020 Eagle I.O Team]:
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) Renata Garcia Prieto Palacios Roji  
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) Casey Osorio-Duffoo  
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) Noel D'Souza  
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) John Kulas
+### Summer 2020 Eagle I.O Team:
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]
 ]
 ---
 
