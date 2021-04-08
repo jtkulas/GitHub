@@ -127,9 +127,10 @@ Find where you downloaded "Git" and link to the location within the `Git executa
 
 ## Good job!!
 
-You are now connect to Github with Rstudio.
+.center[...you are now ready to connect to Github with Rstudio...
 
-![](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
+![](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)]
+]
 
 ---
 
@@ -137,8 +138,8 @@ You are now connect to Github with Rstudio.
 
 Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via devtools because they're hosted on GitHub, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
 
-![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
-
+.center[![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
+]
 
 ---
 class: inverse
@@ -290,11 +291,12 @@ In order to recieve notification that a push has been made to a repository that 
 
 ![](notification.png)
 ---
+class: middle
 
 ## Notifications (II)
 
 .pull-left[
-If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  ggBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of ggBots limits you to only two repositories.
+.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two repositories.]
 ]
 
 .pull-right[
