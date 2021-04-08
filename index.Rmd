@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # Using GitHub through R Studio
 
 ]
-
+<font size="5"> 
 .pull-right[
 ### Summer 2020 [Eagle I.O](https://eagle-io.weebly.com/) Team:
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
@@ -30,6 +30,8 @@ knitr::opts_chunk$set(echo = FALSE)
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]
 ]
+</font>
+
 ---
 
 ## Topics covered
@@ -127,14 +129,14 @@ Find where you downloaded "Git" and link to the location within the `Git executa
 
 ## Good job!!
 
-.center[...you are now ready to connect to Github with Rstudio...
+.center[<font size="5">.fancy[...you are now ready to connect to GitHub with R Studio]</font>
 
 ![](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)]
 ]
 
 ---
 
-## Now Wut?!?
+# .fancy[Now Wut?!?]
 
 Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via devtools because they're hosted on GitHub, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
 
@@ -291,17 +293,17 @@ In order to recieve notification that a push has been made to a repository that 
 
 ![](notification.png)
 ---
-class: middle
 
 ## Notifications (II)
 
+
 .pull-left[
-.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two repositories.]
+![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
 ]
 
 .pull-right[
-![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
-]
+<font size="5">.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two repositories.]
+]</font>
 
 ---
 
