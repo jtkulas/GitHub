@@ -1,0 +1,12 @@
+name: github
+title: GitHub
+username: kulasj
+account: kulasj
+server: bookdown.org
+hostUrl: https://bookdown.org/__api__
+appId: 6273
+bundleId: 36781
+url: https://bookdown.org/kulasj/github/
+when: 1615672494.51771
+asMultiple: FALSE
+asStatic: FALSE

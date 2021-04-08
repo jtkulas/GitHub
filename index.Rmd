@@ -45,7 +45,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Why you want to do this 
 
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and work on projects [such as this current presentation!](https://github.com/jtkulas/GitHub/tree/development)
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say .fancy[goodbye forever] to "mypaper(4)_1.32.20_newest.doc"). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current presentation!](https://github.com/jtkulas/GitHub/tree/development)
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 
@@ -55,7 +55,7 @@ Using a version control platform (such as [GitHub](https://www.github.com)) faci
 
 You need to install "Git" onto your computer before using GitHub through RStudio.
 
-This [site](https://happygitwithr.com/install-git.html) as well as the next few slides walk you through the setup. An entire book dedicated to this Git and R Studio integration is [located here](https://happygitwithr.com/)
+This [site](https://happygitwithr.com/install-git.html) as well as the next few slides walk you through the setup. An entire book dedicated to Git and R Studio integration is [located here](https://happygitwithr.com/)
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
 
@@ -72,16 +72,18 @@ This [site](https://happygitwithr.com/install-git.html) as well as the next few 
 ]
 
 ---
+class: inverse
 
-## Installing Git 
+## .fancy[Installing Git] 
 
 Git is platform tool that helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
 
 ![](Image/Gitpage.png)
 
 ---
+class: inverse
 
-## What's a "Shell"?
+## .fancy[What's a "Shell"]?
 
 At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
 
@@ -89,34 +91,37 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 
 ---
 
-## After you've successfully installed "Git"
-`
-### Part 1: Connect Git to `R` 
-.pull-right[
-- Go to Tools in RStudio; it is between "*Profile*" and "*Help*". 
-- Then, click on Global Options
-- Next, click on Git/SVN 
-]
+## After you've successfully installed "Git" onto your computer
 
 .pull-left[
+### Step 1: Connect Git to `R`  
+- Go to `Tools` in RStudio; it is between `Profile` and `Help` 
+- Then, click on `Global Options`
+- Next, click on `Git/SVN` 
+]
+
+.pull-right[
 ![](Image/Git SVN.png)
 ]
 
 ---
 
-## Part 2: Connect Git To `R`
+## Step 2: Connect Git To `R`
 
-Find where you downloaded "Git" and link to the location within the "*Git executable:*" window
+.pull-left[
+Find where you downloaded "Git" and link to the location within the `Git executable:` window
 
 - On a windows computer, you go to "this PC"
-- Click on "Windowns (C:)"
+- Click on "Windows (C:)"
 - Click on "Program Files Folder"
 - Click on "Git Folder"
 - Click on "bin folder"
 - Click on "git.exe"
+]
 
+.pull-right[
 ![](Image/SVN 2.jpg)
-
+]
 
 ---
 
@@ -136,8 +141,60 @@ Now you need a project to collaborate on. You can use [this current presentation
 
 
 ---
+class: inverse
 
-## Connecting to a GitHub repository
+## .fancy[Connecting individual accounts to shared projects (Step I)]
+
+Invite collaborators from within the GitHub repo:
+
+![](invite.png)
+
+...you'll need their GitHub username
+
+---
+class: inverse
+
+## .fancy[Connecting individual accounts to shared projects [(Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+
+First access the GitHub repository url, then, within the R Studio interface follow the wizard via: File $\rightarrow$ *New Project* $\rightarrow$ Version Control $\rightarrow$ Git $\rightarrow$ paste the GitHub repository address into the "Repository URL:" window.
+
+Note that you'll also indicate a local (on your computer) location for the files...
+
+![](projectnew.png)
+
+---
+class: inverse
+
+## .fancy[Connecting individual accounts to shared projects (Success!!!)] 
+
+You now have a "project" that you can access from within R Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
+
+![](linked.png)
+
+---
+class: inverse
+
+## .fancy[Then what?]
+
+You can now work on shared .Rmd files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository.
+
+There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
+
+![](commit.png)
+
+---
+
+## Using the repository
+
+Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository:
+
+![](pull.png)
+
+---
+
+class: inverse
+
+## .fancy[Connecting to a GitHub repository]
 
 1. Go to Github, and click on code, then copy the link
 2. From within RStudio, you will go to "New Project"
@@ -166,52 +223,6 @@ You can set up notifications via your *global* options (associated with your acc
 ![](Image/notifications.png)
 
 
----
-
-## Connecting individual accounts to shared projects (Step I)
-
-Invite collaborators from within the GitHub repo:
-
-![](invite.png)
-
-...you'll need their GitHub username
-
----
-
-## Connecting individual accounts to shared projects [(Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)
-
-First access the GitHub repository url, then, within the R Studio interface follow the wizard via: File $\rightarrow$ *New Project* $\rightarrow$ Version Control $\rightarrow$ Git $\rightarrow$ paste the GitHub repository address into the "Repository URL:" window.
-
-Note that you'll also indicate a local (on your computer) location for the files...
-
-![](projectnew.png)
-
-
----
-
-## Connecting individual accounts to shared projects (Success) 
-
-You now have a "project" that you can access from within R Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
-
-![](linked.png)
-
----
-
-## Then what?
-
-You can now work on shared .Rmd files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository.
-
-There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
-
-![](commit.png)
-
----
-
-## Using the repository
-
-Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository:
-
-![](pull.png)
 
 
 ---
