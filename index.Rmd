@@ -38,6 +38,28 @@ knitr::opts_chunk$set(echo = FALSE)
 ]
 </font>
 
+
+---
+class: inverse
+
+### Using GitHub `r icon::fa_github(animate="rotate")` through R Studio (alternative)
+<font size="5"> 
+.pull-left[
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
+![](renata.jpg)
+
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
+![](casey.jpg)
+]
+
+.pull-right[
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
+![](noel.jpg)
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]  
+![](kulas.jpg)
+]
+</font>
+
 ---
 
 ## Topics covered
