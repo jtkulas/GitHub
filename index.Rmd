@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ]
 
 .pull-left[
-# Using GitHub `r icon::fa("github")` through R Studio
+# Using GitHub `r icon::fa_github(animate="spin")` through R Studio
 
 ]
 <font size="5"> 
