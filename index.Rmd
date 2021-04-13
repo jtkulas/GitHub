@@ -161,7 +161,15 @@ Find where you downloaded "Git" and link to the location within the `Git executa
 ## Good job!!
 
 .center[<font size="5">.fancy[...you are now ready to connect to GitHub with R Studio]</font>
+]
 
+.left-column[
+.middle[
+# `r icon::fa("github")` 
+# `r icon::fa("r-project")`
+]]
+
+.right-column[
 ![](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)]
 ]
 
