@@ -142,7 +142,7 @@ Find where you downloaded "Git" and link to the location within the `Git executa
 ]
 
 .pull-right[
-![](Image/SVN 2.jpg)
+![](Image/SVN 2.PNG)
 ]
 
 ---
@@ -179,41 +179,62 @@ class: inverse
 
 ## .fancy[[Connecting your account to a GitHub project (Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
-WE NEED SCREENSHOTS OF THIS
+Within the R Studio interface follow the wizard via: File $\rightarrow$ *New Project* $\rightarrow$ Version Control: 
 
-Within the R Studio interface follow the wizard via: File $\rightarrow$ *New Project* $\rightarrow$ Version Control $\rightarrow$ Git $\rightarrow$ paste the GitHub repository address into the "Repository URL:" window.
+.pull-left[
+![](New project.png)
+]
 
-Note that you'll also indicate a local (on your computer) location for the files...
+.pull-right[
+![](Version Control.png)
+]
 
 ---
 class: inverse
 
-## .fancy[Connecting individual accounts to shared projects (Success!!!)] 
+## .fancy[[Connecting your account to a GitHub project (Step III)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+
+Continue with $\rightarrow$ Git and then paste the GitHub repository address into the `Repository URL:` window.
+
+Note that you'll also indicate a local (on your computer) location for the files...
+
+.pull-left[
+![](Click Git.png)
+]
+
+.pull-right[
+![](Enter Repository.png)
+]
+
+---
+class: inverse
+
+## .fancy[Connecting your account to a GitHub project (Success!!!)] 
 
 You now have a "project" that you can access from within R Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
 
 ![](linked.png)
 
 ---
+
+## Then what?
+
+You can now work on shared `r icon::fa("r-project")` files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository.
+
+There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
+
+![](commit.png)
+
+---
 class: inverse
 
-## .fancy[Collaborating with others)]
+## .fancy[Collaborating with others]
 
 Invite collaborators from within the GitHub repo  
 ...you'll need to know their GitHub username
 
 ![](invite.png)
 
----
-class: inverse
-
-## .fancy[Then what?]
-
-You can now work on shared .Rmd files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository.
-
-There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
-
-![](commit.png)
 
 ---
 
