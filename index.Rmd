@@ -14,36 +14,41 @@ layout: true
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
 ---
-class: inverse
+
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 
 ## devtools::install_github("ropenscilabs/icon")
 
 ```
-.center[
-![](https://media.giphy.com/media/UTZ6OOJkAgOV37OmTZ/giphy.gif)
+
+
+.left-column[# Using GitHub `r icon::fa_github(animate="rotate")` through `r icon::fa("r-project", color="cornflowerblue")` Studio 
 ]
 
+<div class="right">
+.right-column[
+![](https://media.giphy.com/media/UTZ6OOJkAgOV37OmTZ/giphy.gif)
 
-# Using GitHub `r icon::fa_github(animate="rotate")` through R Studio 
+### Summer 2020 Eagle I.O tutorial
+]
+</div>
 
 ---
 class: inverse
 
-### Eagle I.O Contributors
+### [Eagle I.O](https://eagle-io.weebly.com/) Contributors:
 <font size="5"> 
 .pull-left[
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
 ![](renata.jpg)
-
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
-![](casey.jpg)
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
+![](noel.jpg)
 ]
 
 .pull-right[
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
-![](noel.jpg)
+[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
+![](casey.jpg)
 [`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]  
 ![](kulas.jpg)
 ]
@@ -53,7 +58,7 @@ class: inverse
 
 ## Topics covered
 
-1. How (and why) to integrate GitHub `r icon::fa("github")` and R Studio `r icon::fa("r-project")`
+1. How (and why) to integrate GitHub `r icon::fa("github")` and `r icon::fa("r-project")` Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
 4. How to ask for a task to be completed
