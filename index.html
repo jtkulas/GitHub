@@ -4,6 +4,7 @@
     <title>GitHub</title>
     <meta charset="utf-8" />
     <meta name="author" content="Kulas Renata Casey Noel" />
+    <script src="index_files/header-attrs-2.7/header-attrs.js"></script>
     <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="index_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="sfah.css" type="text/css" />
@@ -23,7 +24,7 @@ layout: true
 
 
 
-.left-column[# Using GitHub <i class="fab  fa-github "></i> through <i class="fab  fa-r-project " style="color:cornflowerblue;"></i> Studio 
+.left-column[# Using GitHub <i class="fab  fa-github " style="color:black;"></i> through <i class="fab  fa-r-project " style="color:cornflowerblue;"></i> Studio 
 ]
 
 &lt;div class="right"&gt;
@@ -72,17 +73,17 @@ Presentation notes are specified by three question marks and are only visible in
 
 ## Why you want to do this 
 
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **&lt;span style="color:cornflowerblue"&gt;goodbye forever&lt;/span&gt;** to "mypaper(4)_1.32.20_newest.doc"). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current presentation!](https://github.com/jtkulas/GitHub/tree/development)
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **&lt;span style="color:cornflowerblue"&gt;goodbye forever&lt;/span&gt;** to "mypaper(4)_1.32.20_newest.doc"). <i class="fab  fa-r-project "></i> Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 
 ---
 
-## How to integrate RStudio and GitHub
+## How to integrate <i class="fab  fa-r-project "></i> Studio and GitHub <i class="fab  fa-github "></i>
 
-You need to install "Git" onto your computer before using GitHub through RStudio.
+You first need to install "Git" onto your computer before using GitHub through R Studio.
 
-This [site](https://happygitwithr.com/install-git.html) as well as the next few slides walk you through the setup. An entire book dedicated to Git and R Studio integration is [located here](https://happygitwithr.com/)
+This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and R Studio integration is [located here](https://happygitwithr.com/)
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
 
@@ -103,7 +104,7 @@ class: inverse
 
 ## .fancy[Installing Git] 
 
-Git is platform tool that helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to the website &lt;https://git-scm.com/downloads&gt;. Here is what the website should look like:  
+Git is a platform tool that helps connect the website [GitHub](https://github.com/), and <i class="fab  fa-r-project "></i> studio. To install Git on you computer go to the website &lt;https://git-scm.com/downloads&gt;. Here is what the website should look like:  
 
 ![](Image/Gitpage.png)
 
@@ -121,8 +122,10 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 ## After you've successfully installed "Git" onto your computer
 
 .pull-left[
-### Step 1: Connect Git to `R`  
-- Go to `Tools` in RStudio; it is between `Profile` and `Help` 
+### Step 1: Connect Git to <i class="fab  fa-r-project "></i>  
+
+From within <i class="fab  fa-r-project "></i> Studio: 
+- Go to `Tools`; it is between `Profile` and `Help` 
 - Then, click on `Global Options`
 - Next, click on `Git/SVN` 
 ]
@@ -133,7 +136,7 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 
 ---
 
-## Step 2: Connect Git To `R`
+## Step 2: Connect Git To <i class="fab  fa-r-project "></i>
 
 .pull-left[
 Find where you downloaded "Git" and link to the location within the `Git executable:` window
@@ -154,7 +157,7 @@ Find where you downloaded "Git" and link to the location within the `Git executa
 
 ## Good job!!
 
-.center[&lt;font size="5"&gt;.fancy[...you are now ready to connect to GitHub with R Studio]&lt;/font&gt;
+.center[&lt;font size="5"&gt;.fancy[...you are now ready to access GitHub files from within <i class="fab  fa-r-project "></i> Studio]&lt;/font&gt;
 ]
 
 .center[
@@ -173,7 +176,7 @@ Now you need a project to collaborate on. You can use [this current presentation
 ---
 class: inverse
 
-## .fancy[[Connecting your account to a GitHub project (Step I)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+## .fancy[[Connecting to a GitHub project (Step I)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
 First access the GitHub repository you want to connect to, then copy the url to your clipboard:
 
@@ -182,9 +185,9 @@ First access the GitHub repository you want to connect to, then copy the url to 
 ---
 class: inverse
 
-## .fancy[[Connecting your account to a GitHub project (Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+## .fancy[[Connecting to a GitHub project (Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
-Within the R Studio interface follow the wizard via: File `\(\rightarrow\)` *New Project* `\(\rightarrow\)` Version Control: 
+Once you've copied the GitHub repository url, open <i class="fab  fa-r-project "></i> Studio. Then, within the <i class="fab  fa-r-project "></i> Studio interface follow the wizard via: File `\(\rightarrow\)` New Project `\(\rightarrow\)` Version Control: 
 
 .pull-left[
 ![](New project.png)
@@ -197,11 +200,11 @@ Within the R Studio interface follow the wizard via: File `\(\rightarrow\)` *New
 ---
 class: inverse
 
-## .fancy[[Connecting your account to a GitHub project (Step III)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+## .fancy[[Connecting to a GitHub project (Step III)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
 Continue with `\(\rightarrow\)` Git and then paste the GitHub repository address into the `Repository URL:` window.
 
-Note that you'll also indicate a local (on your computer) location for the files...
+Note that you'll also need to indicate a local (on your computer) location for the files...
 
 .pull-left[
 ![](Click Git.png)
@@ -214,7 +217,7 @@ Note that you'll also indicate a local (on your computer) location for the files
 ---
 class: inverse
 
-## .fancy[Connecting your account to a GitHub project (Success!!!)] 
+## .fancy[Connecting to a GitHub project (Success!!!)] 
 
 You now have a "project" that you can access from within R Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
 
@@ -226,7 +229,7 @@ You now have a "project" that you can access from within R Studio, but is linked
 
 You can now work on shared <i class="fab  fa-r-project "></i> files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository.
 
-There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
+There's a decent YouTube overview of the workflow process  [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
 
 ![](commit.png)
 
@@ -235,8 +238,7 @@ class: inverse
 
 ## .fancy[Collaborating with others]
 
-Invite collaborators from within the GitHub repo  
-...you'll need to know their GitHub username
+You can also invite collaborators from within the GitHub repo but you'll first need to know their GitHub username
 
 ![](invite.png)
 
@@ -245,101 +247,11 @@ Invite collaborators from within the GitHub repo
 
 ## Using the repository
 
-Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository:
+Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository.
 
-![](pull.png)
-
----
-
-class: inverse
-
-## .fancy[Connecting to a GitHub repository]
-
-1. Go to Github, and click on code, then copy the link
-2. From within RStudio, you will go to "New Project"
-3. Go to "verison control", click on "Git"
-4. Paste the GitHub link 
-
-
-![](Image/Connect.png)
-
-![](Image/Repo.png)
-
----
-
-## Problem Solving
-
-[This error](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/) was very common, so with the current presentation, we had to bypass it via this command (in the R Studio `terminal` pane)
-
-![](Image/hardboot.png)
-
----
-
-## Options
-
-You can set up notifications via your *global* options (associated with your account - not specific to any one repository):
-
-![](Image/notifications.png)
-
-
-
-
----
-
-## Forking vs. branching
-
-Forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a couple of good descriptions located [here](https://youtu.be/KDUtjZHIx44?t=658) [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
-
-If you find a repository that you'd like to copy (e.g., use it as a template), then "fork".
-
-![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
-
----
-
-## Defining a new branch
-
-Best practice seems to entail creating a branch within which proposed edits can be made and reviewed prior to "pulling" these changes to the master branch (the master is where the initial files were placed, but also where the final product will be located).
-
-You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of RStudio's "Environment/History" panel:
-
-![](branch.png)
-
----
-
-## Lingering questions...
-
-It's important to commit and push all these files....
-
-![](whatdis.PNG)
-
-
-
----
-
-## Push and Pull 
-
-After making changes to a project, you need to commit those changes through the Gihub tab by selecting the documents and hitting the 'commit' button. 
-
-
----
-
-## Pulling from Github
-
-Every time you open up a project connected to Github in which you are collaborating with others, make sure to pull anything that has been added to the repository. To do this, go to the "Git" tab on the top right and slect the "pull" button. A window will pop up letting you know its been updated. 
-
-
----
-
-## Pushing to Github
-
-You will see a pop up window where you will add a comment to your commit and then hit commit once again. After it's done, click "push" to push those changes back to the repository on Github, and so everyone who you are collaborating with can see the changes.
-
----
-
-## Things we still need to figure out! 
-
-+ how to request a change
-+ how to stage
+.center[
+![](https://media.giphy.com/media/nJKDTpuxnZE7fb6Z1b/giphy.gif)
+]
 
 ---
 
@@ -371,6 +283,62 @@ In order to recieve notification that a push has been made to a repository that 
 4. Indicate bot name and follow prompts (starting with "send email")
 
 ![](zzbot.png)
+
+---
+
+## Problem Solving
+
+[This error](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/) was very common, so with the current presentation, we had to bypass it via this command (in the R Studio `terminal` pane)
+
+![](Image/hardboot.png)
+
+---
+
+## Forking vs. branching
+
+Forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a couple of good descriptions located [here](https://youtu.be/KDUtjZHIx44?t=658) [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
+
+If you find a repository that you'd like to copy (e.g., use it as a template), then "fork".
+
+![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
+
+---
+
+## Defining a new branch
+
+Best practice seems to entail creating a branch within which proposed edits can be made and reviewed prior to "pulling" these changes to the master branch (the master is where the initial files were placed, but also where the final product will be located).
+
+You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of RStudio's "Environment/History" panel:
+
+![](branch.png)
+
+---
+
+## Push and Pull 
+
+After making changes to a project, you need to commit those changes through the Gihub tab by selecting the documents and hitting the 'commit' button. 
+
+
+---
+
+## Pulling from Github
+
+Every time you open up a project connected to Github in which you are collaborating with others, make sure to pull anything that has been added to the repository. To do this, go to the "Git" tab on the top right and slect the "pull" button. A window will pop up letting you know its been updated. 
+
+
+---
+
+## Pushing to Github
+
+You will see a pop up window where you will add a comment to your commit and then hit commit once again. After it's done, click "push" to push those changes back to the repository on Github, and so everyone who you are collaborating with can see the changes.
+
+---
+
+## Things we still need to figure out! 
+
++ how to request a change
++ how to stage
+
 ---
 
 ## Issues:
