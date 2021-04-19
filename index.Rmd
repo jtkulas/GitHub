@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 ![](https://media.giphy.com/media/UTZ6OOJkAgOV37OmTZ/giphy.gif)
 
 ### Summer 2020 Eagle I.O tutorial
-![](image/eagleio.png)
+![](Image/eagleio.png)
 ]
 </div>
 
@@ -286,7 +286,7 @@ Especially when working on *shared* projects, make sure to "pull" <span style="c
 ]
 
 .pull-right[
-![](image/pull.png)
+![](Image/pull.png)
 ]
 
 
