@@ -286,7 +286,7 @@ Especially when working on *shared* projects, make sure to "pull" <span style="c
 ]
 
 .pull-right[
-![](Image/pull.png)
+![](Image/pull.PNG)
 ]
 
 
