@@ -9,7 +9,7 @@ output:
 ---
 layout: true
   
-<div class="my-footer"><span>Press the "h" key to access presentation options</span></div>
+<div class="my-footer"><span>Press your "h" key to access presentation options</span></div>
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 ```
 
 
-.left-column[# Using GitHub `r icon::fa_github(color="black")` through `r icon::fa("r-project", color="cornflowerblue")` Studio 
+.left-column[# Using GitHub `r icon::fa_github(color="black")` through `r icon::fa("r-project", color="royalblue")` Studio 
 ]
 
 <div class="right">
@@ -121,7 +121,7 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 ## After you've successfully installed "Git" onto your computer
 
 .pull-left[
-### Step 1: Connect Git to `r icon::fa("r-project")`  
+### Step 1: Connect Git & `r icon::fa("r-project")`  
 
 From within `r icon::fa("r-project")` Studio: 
 - Go to `Tools`; it is between `Profile` and `Help` 
@@ -135,7 +135,7 @@ From within `r icon::fa("r-project")` Studio:
 
 ---
 
-## Step 2: Connect Git To `r icon::fa("r-project")`
+## Step 2: Connect Git & `r icon::fa("r-project")`
 
 .pull-left[
 Find where you downloaded "Git" and link to the location within the `Git executable:` window
@@ -167,7 +167,7 @@ Find where you downloaded "Git" and link to the location within the `Git executa
 
 # .fancy[Now Wut?!?]
 
-Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via devtools because they're hosted on GitHub, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
+Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via `devtools` because they're hosted on GitHub, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
 
 .center[![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
 ]
