@@ -111,7 +111,7 @@ Git is a platform tool that helps connect the website [GitHub](https://github.co
 ---
 class: inverse
 
-## .fancy[What's a "Shell"] `r emo::ji("shell")`?
+## .fancy[What's a "Shell"] `r emo::ji("turtle")`?
 
 At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within `r icon::fa("r-project")` Studio is actually a "shell":
 
