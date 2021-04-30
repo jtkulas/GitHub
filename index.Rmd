@@ -19,6 +19,7 @@ layout: true
 knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 
 ## devtools::install_github("ropenscilabs/icon")
+## devtools::install_github("hadley/emo")
 
 ```
 
@@ -385,12 +386,52 @@ If you still want to work with branches, make sure you understand the broader me
 Creating an issue, which is similar to creating a task: https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue
 How to assign an issue: https://help.github.jp/enterprise/2.11/user/articles/assigning-issues-and-pull-requests-to-other-github-users/#:~:text=Under%20your%20repository%20name%2C%20click,their%20name%20when%20it%20appears.
 
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](New Issue.png)
+
+![](Issue.png)
+
+
+![](Submit Issue.png)
+
 ---
 
 ## Pull request:
 
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
+![](pull1.PNG)
+---
+## Pull request:
+
+![](pull2.PNG)
+---
+## Pull request:
+
+![](pull3.png)
+---
+## Pull request:
+
+![](pull4.png)
+---
+## Pull request:
+
+![](pull5.png)
+---
+## Pull request:
+
+
+![](pull6.png)
+---
+## Pull request:
+
+![](pull7.png)
+---
+## Pull request:
+
+![](pull8.png)
 ---
 
 ## Problem Solving
