@@ -396,12 +396,58 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 
 ![](Submit Issue.png)
 
+<<<<<<< HEAD
+=======
 ---
 
 ## Pull request:
 
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
+![](pull1.PNG)
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](pull2.PNG)
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](pull3.png)
+>>>>>>> 92f9df1b00a36080cfbbe12fcf32e181ef15f863
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](pull4.png)
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](pull5.png)
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](pull6.png)
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+![](pull7.png)
+---
+## Pull request:
+
+https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+
+<<<<<<< HEAD
 ![](pull1.PNG)
 ---
 ## Pull request:
@@ -431,6 +477,8 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 ---
 ## Pull request:
 
+=======
+>>>>>>> 92f9df1b00a36080cfbbe12fcf32e181ef15f863
 ![](pull8.png)
 ---
 
