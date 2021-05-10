@@ -6,7 +6,6 @@
     <meta name="author" content="Kulas Renata Casey Noel" />
     <link href="GitHub_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="GitHub_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-    <link href="GitHub_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
@@ -15,148 +14,34 @@
 
 ![](https://media.giphy.com/media/EXHHMS9caoxAA/giphy.gif)
 
-## Using GitHub through R Studio
+## Learning to use GitHub through R Studio
 
-Summer 2020 Eagle I.O Team: 
-+ [<i class="fab  fa-linkedin " style="color:cornflowerblue;"></i>](https://www.linkedin.com/in/renatagppr/) Renata Garcia Prieto Palacios Roji 
-+ [<i class="fab  fa-linkedin " style="color:cornflowerblue;"></i>](https://www.linkedin.com/in/casey-osorio-duffoo/) Casey Osorio-Duffoo 
-+ [<i class="fab  fa-linkedin " style="color:cornflowerblue;"></i>](https://www.linkedin.com/in/noel-d-souza-60101a125/) Noel D'Souza 
-+ [<i class="fab  fa-linkedin " style="color:cornflowerblue;"></i>](https://www.linkedin.com/in/john-kulas-184a031/) John Kulas
+Summer 2020 Team: 
++ Renata
++ Casey
++ Noel 
++ Kulas
 
 ---
 
-## Topics covered
+## Goals
 
-1. How (and why) to integrate GitHub and R Studio
-2. Connecting individual accounts to shared projects
-3. Committing, pushing, and pulling 
-4. How to ask for a task to be completed
-5. How to approve tasks
+1. figure out how to integrate GitHub and R Studio
+2. connect individual accounts to shared projects
+3. figure out branches and forks (and how to use them)
+4. learn how to ask for a task to be completed
+5. learn how to approve tasks
+6. share what we've learned with the larger group (if interested)
 
-![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg)
----
-
-## Why you want to do this 
-
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material). RStudio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and work on projects [such as this current presentation!](https://github.com/jtkulas/GitHub/tree/development)
-
-![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
+![](https://cdn.pixabay.com/photo/2017/10/06/10/26/fall-foliage-2822593_1280.jpg)
 
 ---
 
 ## How to integrate RStudio and GitHub
 
-You need to install "Git" onto your computer before using GitHub through RStudio.
-
-This [site](https://happygitwithr.com/install-git.html) as well as the next few slides walk you through the setup. 
+This [site](https://happygitwithr.com/install-git.html) walks-through the setup from within RStudio.
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
-
----
-## Additional tutorials
-
-.pull-left[
-As you navigate this presentation, if you find yourself stuck, there are also <i class="fab  fa-youtube " style="color:red;"></i> tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
-]
-
-.pull-right[
-![](https://cdn.pixabay.com/photo/2020/04/27/21/26/girl-5101875_1280.jpg)
-]
-
----
-
-## Installing Git 
-
-Git is platform tool that helps connect the website [GitHub](https://github.com/), and R studio. To install Git on you computer go to the website &lt;https://git-scm.com/downloads&gt;. Here is what the website should look like:  
-
-![](Image/Gitpage.png)
-
----
-
-## What's a "Shell"?
-
-At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of RStudio, but if you'd like to access a shell from *within* RStudio, you can also do so - the "Terminal" tab within RStudio is actually a "shell":
-
-![](Shell.png)
-
----
-
-## After you've successfully installed "Git"
-
-### Part 1: Connect Git to R 
-.pull-right[
-- Go to Tools in RStudio; it is between "*Profile*" and "*Help*". 
-- Then, click on Global Options
-- Next, click on Git/SVN 
-]
-
-.pull-left[
-![](Image/Git SVN.png)
-]
-
----
-
-## Part 2: Connect Git To R
-
-Find where you downloaded "Git" and link to the location within the "*Git executable:*" window
-
-- On a windows computer, you go to "this PC"
-- Click on "Windowns (C:)"
-- Click on "Program Files Folder"
-- Click on "Git Folder"
-- Click on "bin folder"
-- Click on "git.exe"
-
-![](Image/SVN 2.jpg)
-
-
----
-
-## Good job!!
-
-You are now connect to Github with Rstudio.
-
-![](https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif)
-
----
-
-## Now Wut?!?
-
-Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via devtools because they're hosted on GitHub, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
-
-![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
-
-
----
-
-## Connecting to a GitHub repository
-
-1. Go to Github, and click on code, then copy the link
-2. From within RStudio, you will go to "New Project"
-3. Go to "verison control", click on "Git"
-4. Paste the GitHub link 
-
-
-![](Image/Connect.png)
-
-![](Image/Repo.png)
-
----
-
-## Problem Solving
-
-[This error](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/) was very common, so with the current presentation, we had to bypass it via this command (in the R Studio `terminal` pane)
-
-![](Image/hardboot.png)
-
----
-
-## Options
-
-You can set up notifications via your *global* options (associated with your account - not specific to any one repository):
-
-![](Image/notifications.png)
-
 
 ---
 
@@ -199,20 +84,9 @@ There's a decent YouTube overview [here](https://www.youtube.com/watch?v=KjLycV1
 
 ---
 
-## Using the repository
+## [Forking vs. branching](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
 
-Especially with shared projects, every time you access the project, make sure to "pull" - this will ensure that you have (locally) the most up-to-date information that is located on the shared repository:
-
-![](pull.png)
-
-
----
-
-## Forking vs. branching
-
-Forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a couple of good descriptions located [here](https://youtu.be/KDUtjZHIx44?t=658) [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
-
-If you find a repository that you'd like to copy (e.g., use it as a template), then "fork".
+Sounds like forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch.
 
 ![](https://www.pluralsight.com/content/pluralsight/en/blog/software-development/the/the-definitive-guide-to-forks-and-branches-in-git/jcr:content/main/image/image-res.img.9fc1f77b-d4c2-4269-9cda-d7fb7705504e.jpg)
 
@@ -228,67 +102,40 @@ You can create a new GitHub branch from within RStudio via the `New Branch` opti
 
 ---
 
-## Lingering questions...
+## Additional Files
 
-What are all of these files? (they keep multiplying)
+It is important to commit and push all the files that pop-up in order to publish the document through Github. 
 
 ![](whatdis.PNG)
 
-Heya
+
 
 ---
 
-## Tasks for next meeting
+## Push and Pull 
 
-+ figure out push and pull
+After making changes to a project, you need to commit those changes through the Gihub tab by selecting the documents and hitting the 'commit' button. 
+
+
+---
+
+## Pulling from Github
+
+Every time you open up a project connected to Github in which you are collaborating with others, make sure to pull anything that has been added to the repository. To do this, go to the "Git" tab on the top right and slect the "pull" button. A window will pop up letting you know its been updated. 
+
+
+---
+
+## Pushing to Github
+
+You will see a pop up window where you will add a comment to your commit and then hit commit once again. After it's done, click "push" to push those changes back to the repository on Github, and so everyone who you are collaborating with can see the changes.
+
+---
+
+## Things we still need to figure out! 
+
 + how to request a change
 + how to stage
-
----
-
-## Notifications
-
-In order to recieve notification that a push has been made to a repository that you own, navigate to the repository, then indicate up to 2 e-mails that you would like to "sign-up" for... 
-
-![](notification.png)
----
-
-## Notifications (II)
-
-If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has unfortunately depreciated that function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  ggBots](https://www.youtube.com/watch?v=jssX19RsozQ)
-
-![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
-
----
-
-## ZZbots!
-
-1. Sign up for a free [zzBots account](https://www.zzbots.com/)
-2. Connect your new zzBots account to GitHub
-3. Follow the menu to create a new bot 
-4. Indicate bot name and follow prompts (starting with "send email")
-
-![](zzbot.png)
----
-
-## Issues:
-
-Creating an issue, which is similar to creating a task: https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue
-How to assign an issue: https://help.github.jp/enterprise/2.11/user/articles/assigning-issues-and-pull-requests-to-other-github-users/#:~:text=Under%20your%20repository%20name%2C%20click,their%20name%20when%20it%20appears.
-
----
-
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
----
-
-## Watching
-
-...doesn't really seem to do much of anything
-
-![](notification2.png)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
