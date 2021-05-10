@@ -60,7 +60,7 @@ class: inverse
 
 ## Topics covered
 
-1. How (and why) to integrate GitHub `r icon::fa("github")` and `r icon::fa("r-project")` Studio 
+1. How (and why) to integrate GitHub `r icon::fa("github")` and `r icon::fa("r-project", color="royalblue")` Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
 4. How to ask for a task to be completed
@@ -74,17 +74,17 @@ Presentation notes are specified by three question marks and are only visible in
 
 ## Why you want to do this `r emo::ji("cool")`
 
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **<span style="color:cornflowerblue">goodbye forever</span>** to "mypaper(4)_1.32.20_newest.doc"). `r icon::fa("r-project")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **<span style="color:cornflowerblue">goodbye forever</span>** to "mypaper(4)_1.32.20_newest.doc"). `r icon::fa("r-project", color="royalblue")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 
 ---
 
-## How to integrate `r icon::fa("r-project")` Studio and GitHub `r icon::fa_github()`
+## How to integrate `r icon::fa("r-project", color="royalblue")` Studio and GitHub `r icon::fa_github()`
 
-You first need to install "Git" onto your computer before accessing GitHub through `r icon::fa("r-project")` Studio.
+You first need to install "Git" onto your computer before accessing GitHub through `r icon::fa("r-project", color="royalblue")` Studio.
 
-This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon::fa("r-project")` Studio integration is [located here](https://happygitwithr.com/)
+This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon::fa("r-project", color="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
 
@@ -105,7 +105,7 @@ class: inverse
 
 ## .fancy[Installing Git] 
 
-Git is a platform tool that helps connect the website [GitHub](https://github.com/), and `r icon::fa("r-project")` studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
+Git is a platform tool that helps connect the website [GitHub](https://github.com/), and `r icon::fa("r-project", color="royalblue")` studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
 
 ![](Image/Gitpage.png)
 
@@ -114,7 +114,7 @@ class: inverse
 
 ## .fancy[What's a "Shell"] `r emo::ji("turtle")`?
 
-At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of `r icon::fa("r-project")` Studio, but if you'd like to access a shell from *within* `r icon::fa("r-project")` Studio, you can also do so - the "Terminal" tab within `r icon::fa("r-project")` Studio is actually a "shell":
+At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of `r icon::fa("r-project", color="royalblue")` Studio, but if you'd like to access a shell from *within* `r icon::fa("r-project", color="royalblue")` Studio, you can also do so - the "Terminal" tab within `r icon::fa("r-project", color="royalblue")` Studio is actually a "shell":
 
 ![](Shell.png)
 
@@ -125,7 +125,7 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 .pull-left[
 ### Step 1: Connect Git `r icon::fa_github()` & `r icon::fa("r-project")` Studio  
 
-From within `r icon::fa("r-project")` Studio: 
+From within `r icon::fa("r-project", color="royalblue")` Studio: 
 - Go to `Tools`  (it is between `Profile` and `Help`) 
 - Then, click on `Global Options`
 - Next, click on `Git/SVN` 
@@ -137,7 +137,7 @@ From within `r icon::fa("r-project")` Studio:
 
 ---
 
-## Step 2: Connect Git `r icon::fa_github()` & `r icon::fa("r-project")` Studio
+## Step 2: Connect Git `r icon::fa_github()` & `r icon::fa("r-project", color="royalblue")` Studio
 
 .pull-left[
 Find where you downloaded "Git" and link to the location within the `Git executable:` window
@@ -158,7 +158,7 @@ For example, on our windows computer, we navigated to `this PC`
 
 ## Good job!!
 
-.center[<font size="5">.fancy[...you are now ready to access GitHub files from within `r icon::fa("r-project")` Studio]</font>
+.center[<font size="5">.fancy[...you are now ready to access GitHub files from within `r icon::fa("r-project", color="royalblue")` Studio]</font>
 ]
 
 .center[
@@ -188,7 +188,7 @@ class: inverse
 
 ## .fancy[[Connecting to a GitHub project (Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
-Once you've copied the GitHub repository url, open `r icon::fa("r-project")` Studio. Then, within the `r icon::fa("r-project")` Studio interface follow the wizard via: File $\rightarrow$ New Project $\rightarrow$ Version Control: 
+Once you've copied the GitHub repository url, open `r icon::fa("r-project", color="royalblue")` Studio. Then, within the `r icon::fa("r-project", color="royalblue")` Studio interface follow the wizard via: File $\rightarrow$ New Project $\rightarrow$ Version Control: 
 
 .pull-left[
 ![](New project.png)
@@ -228,7 +228,7 @@ You now have a "project" that you can access from within `r icon::fa("r-project"
 
 ## Then what?
 
-You can now work on shared `r icon::fa("r-project")` files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository, but only if you have permission to do so.
+You can now work on shared `r icon::fa("r-project", color="royalblue")` files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository, but only if you have permission to do so.
 
 There's a decent YouTube overview of the workflow process  [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
 
@@ -238,7 +238,7 @@ There's a decent YouTube overview of the workflow process  [here](https://www.yo
 
 ## Pushing and Pulling
 
-After working on a project (on your computer), you'll likely want to upload your changes to your Github repository. You do this by accessing the 1. `Git` tab from within `r icon::fa("r-project")` Studio. Select the documents you'd like to upload and hit the 2. `commit` button. 
+After working on a project (on your computer), you'll likely want to upload your changes to your Github repository. You do this by accessing the 1. `Git` tab from within `r icon::fa("r-project", color="royalblue")` Studio. Select the documents you'd like to upload and hit the 2. `commit` button. 
 
 ![](Image/commit.jpg)
 ---
@@ -251,11 +251,11 @@ Committing initializes a pop up window where you will annotate your changes (e.g
 
 ---
 
-## Tips of the trade
+## Tricks of the trade
 
 .pull-left[The previous slides should be sufficient to get you connected to a project that's hosted on GitHub.  
 
-The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon::fa("r-project")` Studio  
+The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon::fa("r-project", color="royalblue")` Studio  
 
 1. Inviting collaborators
 2. Using notifications
@@ -326,7 +326,7 @@ There is an option to be notified (via e-mail) when somebody makes a push to a r
 
 ## Notifications (IV) `r emo::ji("confused")`
 
-Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...doesn't really seem to do much of anything `r emo::ji("sad")`
+Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (project that you aren't an invited contributor to) `r emo::ji("sad")`
 
 .pull-left[
 ![](notification2.png)
@@ -354,7 +354,7 @@ class: inverse
 
 Best *developer* practice seems to entail creating branches within which proposed edits can be made and reviewed prior to "merging" back into the master branch (the master is where the initial files were placed, but also where the final product will be located).
 
-You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of `r icon::fa("r-project")` Studio's "Environment/History/etc." pane.
+You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of `r icon::fa("r-project", color="royalblue")` Studio's "Environment/History/etc." pane.
 
 ![](branch.png)
 ---
