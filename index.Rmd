@@ -396,8 +396,7 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 
 ![](Submit Issue.png)
 
-<<<<<<< HEAD
-=======
+
 ---
 
 ## Pull request:
@@ -417,7 +416,7 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
 ![](pull3.png)
->>>>>>> 92f9df1b00a36080cfbbe12fcf32e181ef15f863
+
 ---
 ## Pull request:
 
