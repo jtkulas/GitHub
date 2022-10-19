@@ -16,6 +16,8 @@ layout: true
 ---
 
 ```{r setup, include=FALSE}
+
+library(icons)
 knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 
 ## devtools::install_github("ropenscilabs/icon")
@@ -24,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 ```
 
 
-.left-column[# Using GitHub `r icon::fa_github(color="black")` through `r icon::fa("r-project", color="royalblue")` Studio 
+.left-column[# Using GitHub `r fontawesome("github")` through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio 
 ]
 
 <div class="right">
@@ -42,16 +44,16 @@ class: inverse
 ### [Eagle I.O](https://eagle-io.weebly.com/) Contributors:
 <font size="5"> 
 .pull-left[
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
 ![](renata.jpg)
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
 ![](noel.jpg)
 ]
 
 .pull-right[
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
 ![](casey.jpg)
-[`r  icon::fa_linkedin(colour = "cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]  
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]  
 ![](kulas.jpg)
 ]
 </font>
@@ -60,7 +62,7 @@ class: inverse
 
 ## Topics covered
 
-1. How (and why) to integrate GitHub `r icon::fa("github")` and `r icon::fa("r-project", color="royalblue")` Studio 
+1. How (and why) to integrate GitHub `r fontawesome("github")` and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
 4. How to ask for a task to be completed
@@ -74,17 +76,17 @@ Presentation notes are specified by three question marks and are only visible in
 
 ## Why you want to do this `r emo::ji("cool")`
 
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **<span style="color:cornflowerblue">goodbye forever</span>** to "mypaper(4)_1.32.20_newest.doc"). `r icon::fa("r-project", color="royalblue")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **goodbye forever** `r emo::ji("waving_hand")` to "mypaper(4)_1.32.20_newest.doc"). `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 
 ---
 
-## How to integrate `r icon::fa("r-project", color="royalblue")` Studio and GitHub `r icon::fa_github()`
+## How to integrate `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio and GitHub `r fontawesome("github")`
 
-You first need to install "Git" onto your computer before accessing GitHub through `r icon::fa("r-project", color="royalblue")` Studio.
+You first need to install "Git" onto your computer before accessing GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio.
 
-This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon::fa("r-project", color="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
+This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
 
@@ -93,7 +95,7 @@ This [site](https://happygitwithr.com/install-git.html) (in addition to the next
 ## Additional tutorials
 
 .pull-left[
-## .fancy[As you navigate this presentation, if you find yourself stuck, there are also `r icon::fa_youtube(colour = "red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
+## .fancy[As you navigate this presentation, if you find yourself stuck, there are also `r icon_style(fontawesome("youtube"), fill="red")` tutorials located [here](https://youtu.be/lXwH2R4n3RQ) and  [here](https://www.youtube.com/watch?v=Pg8LeOfvQME)  
 ]]
 
 .pull-right[
@@ -105,7 +107,7 @@ class: inverse
 
 ## .fancy[Installing Git] 
 
-Git is a platform tool that helps connect the website [GitHub](https://github.com/), and `r icon::fa("r-project", color="royalblue")` studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
+Git is a platform tool that helps connect the website [GitHub](https://github.com/), and `r icon_style(fontawesome("r-project"), fill="royalblue")` studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
 
 ![](Image/Gitpage.png)
 
@@ -114,7 +116,7 @@ class: inverse
 
 ## .fancy[What's a "Shell"] `r emo::ji("turtle")`?
 
-At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of `r icon::fa("r-project", color="royalblue")` Studio, but if you'd like to access a shell from *within* `r icon::fa("r-project", color="royalblue")` Studio, you can also do so - the "Terminal" tab within `r icon::fa("r-project", color="royalblue")` Studio is actually a "shell":
+At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, but if you'd like to access a shell from *within* `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you can also do so - the "Terminal" tab within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio is actually a "shell":
 
 ![](Shell.png)
 
@@ -123,9 +125,9 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 ## <span style="color:blue">**After**</span> you've successfully installed "Git" onto your computer: 
 
 .pull-left[
-### Step 1: Connect Git `r icon::fa_github()` & `r icon::fa("r-project")` Studio  
+### Step 1: Connect Git `r fontawesome("github")` & `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio  
 
-From within `r icon::fa("r-project", color="royalblue")` Studio: 
+From within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio: 
 - Go to `Tools`  (it is between `Profile` and `Help`) 
 - Then, click on `Global Options`
 - Next, click on `Git/SVN` 
@@ -137,7 +139,7 @@ From within `r icon::fa("r-project", color="royalblue")` Studio:
 
 ---
 
-## Step 2: Connect Git `r icon::fa_github()` & `r icon::fa("r-project", color="royalblue")` Studio
+## Step 2: Connect Git `r fontawesome("github")` & `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio
 
 .pull-left[
 Find where you downloaded "Git" and link to the location within the `Git executable:` window
@@ -158,7 +160,7 @@ For example, on our windows computer, we navigated to `this PC`
 
 ## Good job!!
 
-.center[<font size="5">.fancy[...you are now ready to access GitHub files from within `r icon::fa("r-project", color="royalblue")` Studio]</font>
+.center[<font size="5">.fancy[...you are now ready to access GitHub files from within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio]</font>
 ]
 
 .center[
@@ -169,7 +171,7 @@ For example, on our windows computer, we navigated to `this PC`
 
 # .fancy[Now Wut?!?]
 
-Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via `devtools` because they're hosted on GitHub `r icon::fa_github(color="black")`, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
+Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via `devtools` because they're hosted on GitHub `r fontawesome("github")`, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
 
 .center[![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
 ]
@@ -188,7 +190,7 @@ class: inverse
 
 ## .fancy[[Connecting to a GitHub project (Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
-Once you've copied the GitHub repository url, open `r icon::fa("r-project", color="royalblue")` Studio. Then, within the `r icon::fa("r-project", color="royalblue")` Studio interface follow the wizard via: File $\rightarrow$ New Project $\rightarrow$ Version Control: 
+Once you've copied the GitHub repository url, open `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio. Then, within the `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio interface follow the wizard via: File $\rightarrow$ New Project $\rightarrow$ Version Control: 
 
 .pull-left[
 ![](New project.png)
@@ -220,7 +222,7 @@ class: inverse
 
 ## .fancy[Connecting to a GitHub project (Success!!!)] 
 
-You now have a "project" that you can access from within `r icon::fa("r-project", animate="spin", color="cornflowerblue")` Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
+You now have a "project" that you can access from within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, but is linked to the GitHub files (as well as somewhere locally on your computer)
 
 ![](linked.png)
 
@@ -228,7 +230,7 @@ You now have a "project" that you can access from within `r icon::fa("r-project"
 
 ## Then what?
 
-You can now work on shared `r icon::fa("r-project", color="royalblue")` files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository, but only if you have permission to do so.
+You can now work on shared `r icon_style(fontawesome("r-project"), fill="royalblue")` files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository, but only if you have permission to do so.
 
 There's a decent YouTube overview of the workflow process  [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
 
@@ -238,7 +240,7 @@ There's a decent YouTube overview of the workflow process  [here](https://www.yo
 
 ## Pushing and Pulling
 
-After working on a project (on your computer), you'll likely want to upload your changes to your Github repository. You do this by accessing the 1. `Git` tab from within `r icon::fa("r-project", color="royalblue")` Studio. Select the documents you'd like to upload and hit the 2. `commit` button. 
+After working on a project (on your computer), you'll likely want to upload your changes to your Github repository. You do this by accessing the 1. `Git` tab from within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio. Select the documents you'd like to upload and hit the 2. `commit` button. 
 
 ![](Image/commit.jpg)
 ---
@@ -255,7 +257,7 @@ Committing initializes a pop up window where you will annotate your changes (e.g
 
 .pull-left[The previous slides should be sufficient to get you connected to a project that's hosted on GitHub.  
 
-The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon::fa("r-project", color="royalblue")` Studio  
+The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio  
 
 1. Inviting collaborators
 2. Using notifications
@@ -270,7 +272,7 @@ class: inverse
 
 ## .fancy[Collaborating with others]
 
-You can invite collaborators to contribute to your projects. This is actually how you "grant permission" for others to push to your repository. However, before you do this (from within your GitHub account), <span style="color:cornflowerblue">**they**</span> need a GitHub account and <span style="color:cornflowerblue">**you**</span> need to know their GitHub username...
+You can invite collaborators to contribute to your projects. This is actually how you "grant permission" for others to push to your repository. However, before you do this (from within your GitHub account), <span style="color:royalblue">**they**</span> need a GitHub account and <span style="color:royalblue">**you**</span> need to know their GitHub username...
 
 ![](invite.png)
 
@@ -280,7 +282,7 @@ class: inverse
 
 ## .fancy[Using (a now shared) repository]
 
-Especially when working on *shared* projects, make sure to "pull" <span style="color:cornflowerblue">every time you access the project</span> - this will ensure that you have (locally) the most up-to-date information that is available for the shared project.
+Especially when working on *shared* projects, make sure to "pull" <span style="color:royalblue">every time you access the project</span> - this will ensure that you have (locally) the most up-to-date information that is available for the shared project.
 
 .pull-left[
 ![](https://media.giphy.com/media/nJKDTpuxnZE7fb6Z1b/giphy.gif)
@@ -313,7 +315,7 @@ There is an option to be notified (via e-mail) when somebody makes a push to a r
 
 ---
 
-## Notifications (III) `r icon::fa("robot")`
+## Notifications (III) `r fontawesome("robot")`
 
 1. Sign up for a free [zzBots account](https://www.zzbots.com/)
 2. Connect your new zzBots account to GitHub
@@ -354,7 +356,7 @@ class: inverse
 
 Best *developer* practice seems to entail creating branches within which proposed edits can be made and reviewed prior to "merging" back into the master branch (the master is where the initial files were placed, but also where the final product will be located).
 
-You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of `r icon::fa("r-project", color="royalblue")` Studio's "Environment/History/etc." pane.
+You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio's "Environment/History/etc." pane.
 
 ![](branch.png)
 ---
@@ -446,7 +448,6 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
-<<<<<<< HEAD
 ![](pull1.PNG)
 ---
 ## Pull request:
@@ -476,8 +477,6 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 ---
 ## Pull request:
 
-=======
->>>>>>> 92f9df1b00a36080cfbbe12fcf32e181ef15f863
 ![](pull8.png)
 ---
 
