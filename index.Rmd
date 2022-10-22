@@ -9,7 +9,7 @@ output:
 ---
 layout: true
   
-<div class="my-footer"><span>Press your "h" key to access presentation options</span></div>
+<div class="my-footer"><span>Press your keyboard's "h" key to access presentation options</span></div>
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
@@ -70,16 +70,28 @@ class: inverse
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg){height=500, width=500}
 ???
-Presentation notes are specified by three question marks and are only visible in "presentation" mode in the rendered document
+Our optimization of this workflow is evolving over time. The most recent rendering of this document was `r format(Sys.time(),format="%B %d, %Y")`
 
 ---
 
 ## Why you want to do this `r emo::ji("cool")`
 
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people (while restricting the number of *versions* of the collaborative material - say **goodbye forever** `r emo::ji("waving_hand")` to "mypaper(4)_1.32.20_newest.doc"). `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)
+.pull-left[
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people by limiting the number of *different versions* that exist of the collaborative material.]
+
+.pull-right[
+`r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)]
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
+---
+## Why you want to do this `r emo::ji("wizard")`
 
+If you follow the "push" and "pull" recommendations in this tutorial, you will reduce the number of different versions of a project that exist among collaborators and have a shared location where everyone has access to the most recent version of your project.
+
+![](drafts.jpg)
+
+???
+Blissfully bid a fond adieu to your collaborators' iterative forwardings of *mypaper(4)_1.32.20_newest.doc* `r emo::ji("waving_hand")` .
 ---
 
 ## How to integrate `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio and GitHub `r fontawesome("github")`
