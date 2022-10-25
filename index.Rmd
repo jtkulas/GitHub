@@ -41,7 +41,7 @@ knitr::opts_chunk$set(echo = FALSE, fig.retina=3)
 ---
 class: inverse
 
-### [Eagle I.O](https://eagle-io.weebly.com/) Contributors:
+### [Eagle I.O](https://www.eagle-io.com/) Contributors:
 <font size="5"> 
 .pull-left[
 [`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
@@ -74,17 +74,17 @@ Our optimization of this workflow is evolving over time. The most recent renderi
 
 ---
 
-## Why you want to do this `r emo::ji("cool")`
+## Why you want to do this - 1: `r emo::ji("cool")`
 
 .pull-left[
-Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people by limiting the number of *different versions* that exist of the collaborative material.]
+Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people and limits the number of *different versions* that exist of the collaborative material.]
 
 .pull-right[
 `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integrates really easily with GitHub, so it turns out to be a very useful way to share scripts and efficiently work on projects [such as this current tutorial!](https://github.com/jtkulas/GitHub/tree/development)]
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 ---
-## Why you want to do this `r emo::ji("wizard")`
+## Why you want to do this - 2: `r emo::ji("floppy_disk")`
 
 If you follow the "push" and "pull" recommendations in this tutorial, you will reduce the number of different versions of a project that exist among collaborators and have a shared location where everyone has access to the most recent version of your project.
 
@@ -96,7 +96,7 @@ Blissfully bid a fond adieu to your collaborators' iterative forwardings of *myp
 
 ## How to integrate `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio and GitHub `r fontawesome("github")`
 
-You first need to install "Git" onto your computer before accessing GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio.
+Before accessing GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you first need to install "Git" onto your computer .
 
 This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
 
@@ -126,9 +126,21 @@ Git is a platform tool that helps connect the website [GitHub](https://github.co
 ---
 class: inverse
 
+## .fancy[Installing Git (Part II)] 
+
+Follow the download instructions and take note of where Git is located on your computer (e.g., what is the folder location?). You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.
+
+![](inspector.jpg)
+
+???
+Si... I mean Oui!!!
+
+---
+class: inverse
+
 ## .fancy[What's a "Shell"] `r emo::ji("turtle")`?
 
-At some point you may be asked to operate from within a "shell" (you don't need to do so, but the previous slide's link does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, but if you'd like to access a shell from *within* `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you can also do so - the "Terminal" tab within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio is actually a "shell":
+At some point you may be asked to operate from within a "shell" (you don't need to do so, but the suggested download site does ask you to use a shell). A shell is an access point to your computer that operates somewhere behind your operating system (for example, Windows). You can access shells outside of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, but if you'd like to access a shell from *within* `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you can also do so - the "Terminal" tab within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio is actually a "shell":
 
 ![](Shell.png)
 
@@ -154,7 +166,7 @@ From within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio:
 ## Step 2: Connect Git `r fontawesome("github")` & `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio
 
 .pull-left[
-Find where you downloaded "Git" and link to the location within the `Git executable:` window
+Find where you downloaded "Git" and link to the location within the `Git executable:` field
 
 For example, on our windows computer, we navigated to `this PC`
 - Click on `Windows (C:)`
@@ -188,12 +200,15 @@ Now you need a project to collaborate on. You can use [this current presentation
 .center[![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
 ]
 
+???
+You should be able to connect to any project that's *public* on GitHub, so search around a bit on [www.github.com](https://github.com/). You just won't be able to "push" (discussed on a later slide).
+
 ---
 class: inverse
 
 ## .fancy[[Connecting to a GitHub project (Step I)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
-First access the GitHub repository that you'd like to connect to, then copy the web URL to your clipboard:
+First access the GitHub repository that you'd like to connect to (online at [www.github.com](https://github.com/)), then copy the web URL to your clipboard:
 
 ![](projectnew.png)
 
@@ -217,7 +232,7 @@ class: inverse
 
 ## .fancy[[Connecting to a GitHub project (Step III)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
 
-Continue with $\rightarrow$ Git and then paste the GitHub repository address that you previously copied into the `Repository URL:` window.
+Continue with $\rightarrow$ Git and then paste the GitHub repository address that you copied from [www.github.com](https://github.com/) into the `Repository URL:` window.
 
 Note that you'll also need to indicate a local (on your computer) location for the files...
 
@@ -269,7 +284,7 @@ Committing initializes a pop up window where you will annotate your changes (e.g
 
 .pull-left[The previous slides should be sufficient to get you connected to a project that's hosted on GitHub.  
 
-The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio  
+The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio. This includes:  
 
 1. Inviting collaborators
 2. Using notifications
@@ -353,9 +368,9 @@ Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is onl
 ---
 class: inverse
 
-## .fancy[Forking vs. branching]
+## .fancy[Forking & branching]
 
-Forks are different paths that a project may take (e.g., point of divergence) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a few helpful descriptions located [here](https://youtu.be/KDUtjZHIx44?t=658) [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
+Forks are different paths that a project may take (e.g., points of divergence in purpose) toward a different end-goal, whereas branches are shorter-term (typically) "construction zones" where edits can be temporarily held before being integrated into the master branch. There are a few helpful descriptions located [here](https://youtu.be/KDUtjZHIx44?t=658) [here](https://support.atlassian.com/bitbucket-cloud/docs/branch-or-fork-your-repository/) and [here](https://www.pluralsight.com/blog/software-development/the-definitive-guide-to-forks-and-branches-in-git#:~:text=Forking%20creates%20a%20full%20copy,what%20branch%20you%20are%20using.-)
 
 If you find a repository that you'd like to copy (e.g., use it as a template to build something yourself), then "fork" it.
 
@@ -415,16 +430,30 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 
 ## Pull request:
 
+When it comes time to *integrate* different versions on your shared project, you may consider a `pull request`. This makes it possible to:
+
+1. Get feedback (from other collaborators) on your proposed contribution, &
+2. Document the discussion regarding the contribution
+
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
 ![](pull1.PNG)
+
 ---
-## Pull request:
+
+## Pull request (also):
+
+Pull requests are also options for open source projects where you are not formally a collaborator but wish to make a suggestion. This is how some of the alternative coins conduct their operations.
 
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
 
 ![](pull2.PNG)
+
+???  
+See, for example, the [ethereum](https://github.com/ethereum) network of repositories.
+
 ---
+
 ## Pull request:
 
 https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
