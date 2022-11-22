@@ -96,7 +96,7 @@ Blissfully bid a fond adieu to your collaborators' iterative forwardings of *myp
 
 ## How to integrate `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio and GitHub `r fontawesome("github")`
 
-Before accessing GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you first need to install "Git" onto your computer .
+Before accessing GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you'll first need to install some "Git" software onto your computer .
 
 This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
 
@@ -119,21 +119,30 @@ class: inverse
 
 ## .fancy[Installing Git] 
 
-Git is a platform tool that helps connect the website [GitHub](https://github.com/), and `r icon_style(fontawesome("r-project"), fill="royalblue")` studio. To install Git on you computer go to the website <https://git-scm.com/downloads>. Here is what the website should look like:  
+Git is a platform tool that is used by software developers for source code management.  You need it in order to use GitHub. To install Git on you computer, [go to the website](https://git-scm.com/downloads). Here is what the website should look like:  
 
 ![](Image/Gitpage.png)
+
+???
+[GitHub](https://github.com/) is a company that offers cloud-based hosting and also makes git a little easier to use for non-coders. [This video](https://youtu.be/21Gl97tkbHU) presents some background on Git and GitHub. GitHub is a great way to use Git through `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.
 
 ---
 class: inverse
 
 ## .fancy[Installing Git (Part II)] 
 
-Follow the download instructions and take note of where Git is located on your computer (e.g., what is the folder location?). You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.
+.pull-left[
+![](https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif)
+]
 
-![](inspector.jpg)
+.pull-right[
+Follow the download instructions and <span style="color:royalblue">take note of where Git is located on your computer</span> (e.g., what is the folder location?). 
+
++ You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.
+]
 
 ???
-Si... I mean Oui!!!
+If you didn't notice the folder location, use the **File Explorer** and do a search for `*.exe`... this will pull up a few files, but one of them should be the git executable.
 
 ---
 class: inverse
@@ -149,7 +158,7 @@ At some point you may be asked to operate from within a "shell" (you don't need 
 ## <span style="color:blue">**After**</span> you've successfully installed "Git" onto your computer: 
 
 .pull-left[
-### Step 1: Connect Git `r fontawesome("github")` & `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio  
+### Step 1: Tell `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio  where your download of Git is located
 
 From within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio: 
 - Go to `Tools`  (it is between `Profile` and `Help`) 
@@ -184,7 +193,7 @@ For example, on our windows computer, we navigated to `this PC`
 
 ## Good job!!
 
-.center[<font size="5">.fancy[...you are now ready to access GitHub files from within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio]</font>
+.center[<font size="6">.fancy[...you are now ready to access GitHub `r fontawesome("github")` files from within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio]</font>
 ]
 
 .center[
