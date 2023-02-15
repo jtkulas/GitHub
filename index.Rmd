@@ -44,7 +44,7 @@ class: inverse
 ### [Eagle I.O](https://www.eagle-io.com/) Contributors:
 <font size="5"> 
 .pull-left[
-[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata Garcia Prieto Palacios Roji]  
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata García Prieto Palacios Roji]  
 ![](renata.jpg)
 [`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
 ![](noel.jpg)
@@ -98,7 +98,7 @@ Blissfully bid a fond adieu to your collaborators' iterative forwardings of *myp
 
 Before accessing GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio, you'll first need to install some "Git" software onto your computer .
 
-This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walk you through the setup. An entire book dedicated to Git and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
+This [site](https://happygitwithr.com/install-git.html) (in addition to the next few slides) walks you through the setup. An entire book dedicated to Git and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio integration is [located here](https://happygitwithr.com/)
 
 ![](https://cdn.pixabay.com/photo/2016/09/07/16/02/alpaca-1651897__480.jpg)
 
@@ -119,7 +119,7 @@ class: inverse
 
 ## .fancy[Installing Git] 
 
-Git is a platform tool that is used by software developers for source code management.  You need it in order to use GitHub. To install Git on you computer, [go to the website](https://git-scm.com/downloads). Here is what the website should look like:  
+Git is a platform tool that is used by software developers for source code management.  You need it in order to use GitHub. To install Git on you computer, [go to the website](https://git-scm.com/downloads). This is what the website should look like:  
 
 ![](Image/Gitpage.png)
 
@@ -131,14 +131,14 @@ class: inverse
 
 ## .fancy[Installing Git (Part II)] 
 
+<font size = "5">Follow the download instructions and <span style="color:royalblue">take note of where Git is located on your computer</span> (e.g., what is the folder location?). </font>  
+
 .pull-left[
 ![](https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif)
 ]
 
 .pull-right[
-Follow the download instructions and <span style="color:royalblue">take note of where Git is located on your computer</span> (e.g., what is the folder location?). 
-
-+ You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.
++ <font size = "6">You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.</font> 
 ]
 
 ???
@@ -266,7 +266,7 @@ You now have a "project" that you can access from within `r icon_style(fontaweso
 
 ## Then what?
 
-You can now work on shared `r icon_style(fontawesome("r-project"), fill="royalblue")` files via local editing. A "commit" saves your edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository, but only if you have permission to do so.
+You can now work on shared `r icon_style(fontawesome("r-project"), fill="royalblue")` files via local editing. A "commit" saves your local edits, whereas a "push" sends your saved changes (aka "commits") to the online GitHub repository, but only if you have permission to do so.
 
 There's a decent YouTube overview of the workflow process  [here](https://www.youtube.com/watch?v=KjLycV1IWqc)
 
@@ -286,6 +286,8 @@ After working on a project (on your computer), you'll likely want to upload your
 Committing initializes a pop up window where you will annotate your changes (e.g., what and why you did to the files). After 1. `committing`, you also need to 2. `push` to send those changes back up to the GitHub repository. Once you do that, everyone who you are collaborating with can see and access the changes.
 
 ![](Image/push.jpg)
+???
+All of this can also be accomplished via *GitBash* commands that you can type into your terminal. We currently use the *GitBash* command of `git add -A` instead of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio's wizard. `git add -A` solves lag issues you may encounter when using the `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio commit wizard (the wizard window is shown on this slide).
 
 ---
 
@@ -328,6 +330,37 @@ Especially when working on *shared* projects, make sure to "pull" <span style="c
 ![](Image/pull.PNG)
 ]
 
+---
+class: inverse 
+
+### .fancy[.salt[However...]]
+
+Take note here that if you try "pulling" prior to committing your local changes, you will encounter a **conflict**
+
+.pull-left[
+![](https://media.giphy.com/media/lojil9HflxEjOq4gBz/giphy.gif)
+]
+
+.pull-right[.large[We do have a suggested work-around for when this happens...]]
+
+---
+
+class: inverse 
+
+### .fancy[.salt[Resolving conflict(s)]]
+
+Working from within your `terminal`, the two git commands below will: 1) stash your local changes in a different location, and 2) delete those stashed files
+
+.pull-left[ 
+Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore only useful if the information on the repository should reasonably be considered *more* important or *more* up-to-date:
+
+1. `git stash --include-untracked`
+2. `git stash drop`
+]
+
+.pull-right[
+![](https://media.giphy.com/media/XxEy4h6YxKE2H5TZ1x/giphy.gif)
+]
 
 ---
 
