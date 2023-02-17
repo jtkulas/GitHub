@@ -204,7 +204,7 @@ For example, on our windows computer, we navigated to `this PC`
 
 # .fancy[Now Wut?!?]
 
-Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via `devtools` because they're hosted on GitHub `r fontawesome("github")`, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
+Now you need a project to collaborate on. You can use [this current presentation](https://github.com/jtkulas/GitHub/tree/development) as an example project if you wanna be meta!!! (just beware we use some packages that you'll need to install via `devtools` or `remotes` because they're hosted on GitHub `r fontawesome("github")`, not CRAN). If meta scares you, you can try a [simpler project](https://github.com/jtkulas/temp/tree/master).
 
 .center[![](https://media.giphy.com/media/nwkdRTpxqITOE/giphy.gif)
 ]
@@ -335,13 +335,13 @@ class: inverse
 
 ### .fancy[.salt[However...]]
 
-Take note here that if you try "pulling" prior to committing your local changes, you will encounter a **conflict**
+Take note here that if you try "pulling" prior to committing any local changes you have made, you will encounter a **conflict**
 
 .pull-left[
 ![](https://media.giphy.com/media/lojil9HflxEjOq4gBz/giphy.gif)
 ]
 
-.pull-right[.large[We do have a suggested work-around for when this happens...]]
+.pull-right[.large[We do have a helpful work-around for when this happens...]]
 
 ---
 
@@ -349,10 +349,10 @@ class: inverse
 
 ### .fancy[.salt[Resolving conflict(s)]]
 
-Working from within your `terminal`, the two git commands below will: 1) stash your local changes in a different location, and 2) delete those stashed files
+Working from within your `terminal`, the two git commands enumerated below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
 
 .pull-left[ 
-Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore only useful if the information on the repository should reasonably be considered *more* important or *more* up-to-date:
+Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore primarily useful when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
 
 1. `git stash --include-untracked`
 2. `git stash drop`
@@ -361,6 +361,10 @@ Take note here that any **new** work you've done locally will be obliviated... t
 .pull-right[
 ![](https://media.giphy.com/media/XxEy4h6YxKE2H5TZ1x/giphy.gif)
 ]
+
+???
+Obviously this work-around is only helpful if you're willing to prioritize the repository information over your local information. If you want to use this method but also salvage both conflicting files, you can copy/paste your local code into a Notepad file, and then incorporate after you've pulled from the repository...
+
 
 ---
 
