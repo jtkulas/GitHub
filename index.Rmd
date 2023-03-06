@@ -117,7 +117,7 @@ This [site](https://happygitwithr.com/install-git.html) (in addition to the next
 ---
 class: inverse
 
-## .fancy[Installing Git] 
+## .fancy[Installing Git (Part I)] 
 
 Git is a platform tool that is used by software developers for source code management.  You need it in order to use GitHub. To install Git on you computer, [go to the website](https://git-scm.com/downloads). This is what the website should look like:  
 
@@ -349,10 +349,10 @@ class: inverse
 
 ### .fancy[.salt[Resolving conflict(s)]]
 
-Working from within your `terminal`, the two git commands enumerated below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
+Working from within your `terminal`, the two git commands listed below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
 
 .pull-left[ 
-Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore primarily useful when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
+Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore most useful only when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
 
 1. `git stash --include-untracked`
 2. `git stash drop`
@@ -388,7 +388,7 @@ There is an option to be notified (via e-mail) when somebody makes a push to a r
 
 ---
 
-## Notifications (III) `r fontawesome("robot")`
+## Notifications (III) `r emo::ji("robot")`
 
 1. Sign up for a free [zzBots account](https://www.zzbots.com/)
 2. Connect your new zzBots account to GitHub
@@ -401,7 +401,7 @@ There is an option to be notified (via e-mail) when somebody makes a push to a r
 
 ## Notifications (IV) `r emo::ji("confused")`
 
-Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (project that you aren't an invited contributor to) `r emo::ji("sad")`
+Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (projects that you aren't an invited contributor to) `r emo::ji("sad")`
 
 .pull-left[
 ![](notification2.png)
@@ -445,32 +445,6 @@ class: inverse
 
 ???
 If you still want to work with branches, make sure you understand the broader merge process - branches being ahead and behind each other seems to create chaos 
-
-
----
-
-## Things we still need to figure out! 
-
-+ how to request a change
-+ how to stage
-
----
-
-## Issues:
-
-Creating an issue, which is similar to creating a task: https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue
-How to assign an issue: https://help.github.jp/enterprise/2.11/user/articles/assigning-issues-and-pull-requests-to-other-github-users/#:~:text=Under%20your%20repository%20name%2C%20click,their%20name%20when%20it%20appears.
-
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](New Issue.png)
-
-![](Issue.png)
-
-
-![](Submit Issue.png)
-
 
 ---
 
@@ -567,8 +541,33 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 ![](pull8.png)
 ---
 
-## Problem Solving
+## Issues:
 
-[This error](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/) was very common, so with the current presentation, we had to bypass it via this command (in the R Studio `terminal` pane)
+[Creating an issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue), which is similar to creating a task: 
 
-![](Image/hardboot.png)
+[How to assign an issue](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request): 
+
+![](New Issue.png)
+
+![](Issue.png)
+
+---
+class: inverse
+
+###.salt[Let us know if you have any questions]
+
+.pull-left[
+![](https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif)
+]
+
+.pull-right[
+.fancy[[Eagle I.O](https://www.eagle-io.com/)]
+ 
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/renatagppr/) .fancy[Renata García Prieto Palacios Roji]  
+
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
+
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
+
+[`r  icon_style(fontawesome("linkedin"), fill="cornflowerblue")`](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]  
+]

@@ -67,7 +67,7 @@ class: inverse
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg){height=500, width=500}
 ???
-Our optimization of this workflow is evolving over time. The most recent rendering of this document was February 17, 2023
+Our optimization of this workflow is evolving over time. The most recent rendering of this document was March 05, 2023
 
 ---
 
@@ -114,7 +114,7 @@ This [site](https://happygitwithr.com/install-git.html) (in addition to the next
 ---
 class: inverse
 
-## .fancy[Installing Git] 
+## .fancy[Installing Git (Part I)] 
 
 Git is a platform tool that is used by software developers for source code management.  You need it in order to use GitHub. To install Git on you computer, [go to the website](https://git-scm.com/downloads). This is what the website should look like:  
 
@@ -346,10 +346,10 @@ class: inverse
 
 ### .fancy[.salt[Resolving conflict(s)]]
 
-Working from within your `terminal`, the two git commands enumerated below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
+Working from within your `terminal`, the two git commands listed below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
 
 .pull-left[ 
-Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore primarily useful when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
+Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore most useful only when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
 
 1. `git stash --include-untracked`
 2. `git stash drop`
@@ -385,7 +385,7 @@ There is an option to be notified (via e-mail) when somebody makes a push to a r
 
 ---
 
-## Notifications (III) &lt;svg viewBox="0 0 640 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M32,224H64V416H32A31.96166,31.96166,0,0,1,0,384V256A31.96166,31.96166,0,0,1,32,224Zm512-48V448a64.06328,64.06328,0,0,1-64,64H160a64.06328,64.06328,0,0,1-64-64V176a79.974,79.974,0,0,1,80-80H288V32a32,32,0,0,1,64,0V96H464A79.974,79.974,0,0,1,544,176ZM264,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,264,256Zm-8,128H192v32h64Zm96,0H288v32h64ZM456,256a40,40,0,1,0-40,40A39.997,39.997,0,0,0,456,256Zm-8,128H384v32h64ZM640,256V384a31.96166,31.96166,0,0,1-32,32H576V224h32A31.96166,31.96166,0,0,1,640,256Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+## Notifications (III) 🤖
 
 1. Sign up for a free [zzBots account](https://www.zzbots.com/)
 2. Connect your new zzBots account to GitHub
@@ -398,7 +398,7 @@ There is an option to be notified (via e-mail) when somebody makes a push to a r
 
 ## Notifications (IV) 😕
 
-Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (project that you aren't an invited contributor to) 😿
+Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (projects that you aren't an invited contributor to) 😿
 
 .pull-left[
 ![](notification2.png)
@@ -442,32 +442,6 @@ class: inverse
 
 ???
 If you still want to work with branches, make sure you understand the broader merge process - branches being ahead and behind each other seems to create chaos 
-
-
----
-
-## Things we still need to figure out! 
-
-+ how to request a change
-+ how to stage
-
----
-
-## Issues:
-
-Creating an issue, which is similar to creating a task: https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue
-How to assign an issue: https://help.github.jp/enterprise/2.11/user/articles/assigning-issues-and-pull-requests-to-other-github-users/#:~:text=Under%20your%20repository%20name%2C%20click,their%20name%20when%20it%20appears.
-
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](New Issue.png)
-
-![](Issue.png)
-
-
-![](Submit Issue.png)
-
 
 ---
 
@@ -564,11 +538,36 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 ![](pull8.png)
 ---
 
-## Problem Solving
+## Issues:
 
-[This error](https://codewithhugo.com/fix-git-failed-to-push-updates-were-rejected/) was very common, so with the current presentation, we had to bypass it via this command (in the R Studio `terminal` pane)
+[Creating an issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue), which is similar to creating a task: 
 
-![](Image/hardboot.png)
+[How to assign an issue](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request): 
+
+![](New Issue.png)
+
+![](Issue.png)
+
+---
+class: inverse
+
+###.salt[Let us know if you have any questions]
+
+.pull-left[
+![](https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif)
+]
+
+.pull-right[
+.fancy[[Eagle I.O](https://www.eagle-io.com/)]
+ 
+[&lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:cornflowerblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.linkedin.com/in/renatagppr/) .fancy[Renata García Prieto Palacios Roji]  
+
+[&lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:cornflowerblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.linkedin.com/in/noel-d-souza-60101a125/) .fancy[Noel D'Souza]  
+
+[&lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:cornflowerblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.linkedin.com/in/casey-osorio-duffoo/) .fancy[Casey Osorio-Duffoo]  
+
+[&lt;svg viewBox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:cornflowerblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"&gt;&lt;/path&gt;&lt;/svg&gt;](https://www.linkedin.com/in/john-kulas-184a031/) .fancy[John Kulas]  
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
