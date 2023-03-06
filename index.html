@@ -62,12 +62,11 @@ class: inverse
 1. How (and why) to integrate GitHub &lt;svg viewBox="0 0 496 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; and &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
-4. How to ask for a task to be completed
-5. How to approve tasks
+4. Advanced topics [(slides 22-52)](#advanced)
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg){height=500, width=500}
 ???
-Our optimization of this workflow is evolving over time. The most recent rendering of this document was March 05, 2023
+Our optimization of this workflow is evolving over time. The most recent rendering of this document was March 06, 2023
 
 ---
 
@@ -287,22 +286,27 @@ Committing initializes a pop up window where you will annotate your changes (e.g
 All of this can also be accomplished via *GitBash* commands that you can type into your terminal. We currently use the *GitBash* command of `git add -A` instead of &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio's wizard. `git add -A` solves lag issues you may encounter when using the &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio commit wizard (the wizard window is shown on this slide).
 
 ---
-
+name: advanced
 ## Tricks of the trade
 
-.pull-left[The previous slides should be sufficient to get you connected to a project that's hosted on GitHub.  
+.pull-left[The previous slides should be sufficient to get a beginner connected to a project that's hosted on GitHub.  
 
-The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio. This includes:  
+The following slides present topics that an intermediate-level user may be interested in (e.g., someone who has already mastered setting up GitHub projects within &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio). These "advanced" topics include:  
 
-1. Inviting collaborators
-2. Using notifications
-2. Structuring (forking and branching)
+1. Inviting collaborators [(23-24)](#invite)
+  + Resolving conflicts [(25-26)](#resolve)
+2. Structuring (forking and branching) [(27-29)](#fork)
+3. Communicating with others
+  + Issues [30-32](#issue)
+  + Notifications [(33-36)](#notify)
+  + Pull requests
 ]
 
 .pull-right[![](https://media.giphy.com/media/8MQXpRuCZFKiA/giphy.gif)
 ]
 
 ---
+name: invite
 class: inverse
 
 ## .fancy[Collaborating with others]
@@ -328,28 +332,26 @@ Especially when working on *shared* projects, make sure to "pull" &lt;span style
 ]
 
 ---
-class: inverse 
+name: resolve
 
-### .fancy[.salt[However...]]
+# .fancy[However...]🥊
 
-Take note here that if you try "pulling" prior to committing any local changes you have made, you will encounter a **conflict**
+Take note here that if you try "pulling" prior to committing local changes you have made, you may encounter a .heatinline[**conflict**]
 
 .pull-left[
 ![](https://media.giphy.com/media/lojil9HflxEjOq4gBz/giphy.gif)
 ]
 
-.pull-right[.large[We do have a helpful work-around for when this happens...]]
+.pull-right[.large[We do have a work-around for when this happens...]]
 
 ---
 
-class: inverse 
-
-### .fancy[.salt[Resolving conflict(s)]]
+# .fancy[Resolving conflict(s)] 💖
 
 Working from within your `terminal`, the two git commands listed below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
 
 .pull-left[ 
-Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore most useful only when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
+Take note here that any local work you've done will be obliviated... this work-around is therefore only useful when the information on the repository is reasonably considered to be *more* important or *more* up-to-date than what you have locally:
 
 1. `git stash --include-untracked`
 2. `git stash drop`
@@ -362,53 +364,8 @@ Take note here that any **new** work you've done locally will be obliviated... t
 ???
 Obviously this work-around is only helpful if you're willing to prioritize the repository information over your local information. If you want to use this method but also salvage both conflicting files, you can copy/paste your local code into a Notepad file, and then incorporate after you've pulled from the repository...
 
-
 ---
-
-## Notifications
-
-There is an option to be notified (via e-mail) when somebody makes a push to a repository that you "own". This alerts you to the fact that a change has been made, and reminds you that you should "pull" prior to working on the project. To activate these notifications, navigate to the repository on GitHub, then enter your e-mail address... 
-
-![](notification.png)
----
-
-## Notifications (II)
-
-
-.pull-left[
-![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
-]
-
-.pull-right[
-&lt;font size="5"&gt;.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has depreciated that legacy  function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two unowned repositories.]
-]&lt;/font&gt;
-
----
-
-## Notifications (III) 🤖
-
-1. Sign up for a free [zzBots account](https://www.zzbots.com/)
-2. Connect your new zzBots account to GitHub
-3. Follow the menu to create a new bot 
-4. Indicate bot name and follow prompts (starting with "send email")
-
-![](zzbot.png)
-
----
-
-## Notifications (IV) 😕
-
-Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (projects that you aren't an invited contributor to) 😿
-
-.pull-left[
-![](notification2.png)
-]
-
-.pull-right[
-![](https://media.giphy.com/media/Vfie0DJryAde8/giphy.gif)
-]
-
----
+name: fork
 class: inverse
 
 ## .fancy[Forking &amp; branching]
@@ -429,7 +386,9 @@ Best *developer* practice seems to entail creating branches within which propose
 You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio's "Environment/History/etc." pane.
 
 ![](branch.png)
+
 ---
+
 class: inverse
 
 ## .fancy[Defining a new branch (recommendation)]
@@ -444,10 +403,103 @@ class: inverse
 If you still want to work with branches, make sure you understand the broader merge process - branches being ahead and behind each other seems to create chaos 
 
 ---
+name: issue
+## .fancy[Issues (whazzat?)]:
 
-## Pull request:
+.pull-left[You can think of `issues` as computer-based post-it notes.  
 
-When it comes time to *integrate* different versions on your shared project, you may consider a `pull request`. This makes it possible to:
+You'll want to write and manage these directly through GitHub (instead of through &lt;svg viewBox="0 0 581 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:royalblue;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"&gt;&lt;/path&gt;&lt;/svg&gt; Studio), but they are helpful for keeping track of ideas and "things you want to work on" without being overly committal.
+]
+
+.pull-right[
+![](postit.jpg)
+]
+
+???
+Issues can be more elaborate, and can also be [linked to pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword). We're focusing on the simplest of uses here in this tutorial. 
+
+---
+## .fancy[Issues (How to create)]:
+
+1. Navigate to your online repository to [create an issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue):
+![](New Issue.png)
+--
+2. ...and then
+[assign the issue](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to a collaborator, if you'd like to (this isn't necessary): 
+![](Issue.png)
+
+---
+name: notify
+class: inverse
+## .fancy["Notifications"] 📩
+
+There is an option to be notified (via e-mail) when somebody makes a push to a repository .saltinline[**that you "own"**]. This alerts you to the fact that a change has been made, and reminds you that you should "pull" prior to working on the project. To activate these notifications, navigate to the repository on GitHub, then enter your e-mail address... 
+
+![](notification.png)
+---
+class: inverse
+## Notifications (II)
+
+
+.pull-left[
+![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
+]
+
+.pull-right[
+&lt;font size="5"&gt;.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has depreciated that legacy  function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two unowned repositories.]
+]&lt;/font&gt;
+
+---
+class: inverse
+## Notifications (III) 🤖
+
+1. Sign up for a free [zzBots account](https://www.zzbots.com/)
+2. Connect your new zzBots account to GitHub
+3. Follow the menu to create a new bot 
+4. Indicate bot name and follow prompts (starting with "send email")
+
+![](zzbot.png)
+
+---
+class: inverse
+## Notifications (IV) 😕
+
+Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (projects that you aren't an invited contributor to) 😞
+
+.pull-left[
+![](notification2.png)
+]
+
+.pull-right[
+![](https://media.giphy.com/media/Vfie0DJryAde8/giphy.gif)
+]
+
+---
+
+## .fancy[Pull request]: 🧲
+
+.pull-left[
+![](https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif)
+]
+
+.pull-right[
+**IF** you do use different branches, then at some point you'll want to *integrate* something from a developmental branch onto the main branch. This is typically accomplished via a .heatinline[**pull request**]. 
+
+A .heatinline[**pull request**] answers the question: .large["**What did you change?**"]
+]
+
+???
+Pull requests are also used when you want to contribute to a repository where you're not a formal owner or collaborator - this is very popular with "open source" projects.
+
+---
+
+## .fancy[Pull request]: 
+
+Going through a formal .heatinline[**pull request**] when considering changes among team members places a review frame on the changes. Now you'll be able to share, comment, and receive feedback on your contribution before it's integrated (aka `merged`).
+
+![](review.jpg)
+
+---
 
 1. Get feedback (from other collaborators) on your proposed contribution, &amp;
 2. Document the discussion regarding the contribution
@@ -536,22 +588,11 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 ## Pull request:
 
 ![](pull8.png)
----
-
-## Issues:
-
-[Creating an issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue), which is similar to creating a task: 
-
-[How to assign an issue](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request): 
-
-![](New Issue.png)
-
-![](Issue.png)
 
 ---
 class: inverse
 
-###.salt[Let us know if you have any questions]
+###.salt[Let us know if you have any questions!!]
 
 .pull-left[
 ![](https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif)

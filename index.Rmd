@@ -65,8 +65,7 @@ class: inverse
 1. How (and why) to integrate GitHub `r fontawesome("github")` and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
-4. How to ask for a task to be completed
-5. How to approve tasks
+4. Advanced topics [(slides 22-52)](#advanced)
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg){height=500, width=500}
 ???
@@ -290,22 +289,27 @@ Committing initializes a pop up window where you will annotate your changes (e.g
 All of this can also be accomplished via *GitBash* commands that you can type into your terminal. We currently use the *GitBash* command of `git add -A` instead of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio's wizard. `git add -A` solves lag issues you may encounter when using the `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio commit wizard (the wizard window is shown on this slide).
 
 ---
-
+name: advanced
 ## Tricks of the trade
 
-.pull-left[The previous slides should be sufficient to get you connected to a project that's hosted on GitHub.  
+.pull-left[The previous slides should be sufficient to get a beginner connected to a project that's hosted on GitHub.  
 
-The following slides focus on some workflow recommendations - how we think you should (at least initially) use GitHub through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio. This includes:  
+The following slides present topics that an intermediate-level user may be interested in (e.g., someone who has already mastered setting up GitHub projects within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio). These "advanced" topics include:  
 
-1. Inviting collaborators
-2. Using notifications
-2. Structuring (forking and branching)
+1. Inviting collaborators [(23-24)](#invite)
+  + Resolving conflicts [(25-26)](#resolve)
+2. Structuring (forking and branching) [(27-29)](#fork)
+3. Communicating with others
+  + Issues [30-32](#issue)
+  + Notifications [(33-36)](#notify)
+  + Pull requests
 ]
 
 .pull-right[![](https://media.giphy.com/media/8MQXpRuCZFKiA/giphy.gif)
 ]
 
 ---
+name: invite
 class: inverse
 
 ## .fancy[Collaborating with others]
@@ -331,28 +335,26 @@ Especially when working on *shared* projects, make sure to "pull" <span style="c
 ]
 
 ---
-class: inverse 
+name: resolve
 
-### .fancy[.salt[However...]]
+# .fancy[However...]`r emo::ji("boxing_glove")`
 
-Take note here that if you try "pulling" prior to committing any local changes you have made, you will encounter a **conflict**
+Take note here that if you try "pulling" prior to committing local changes you have made, you may encounter a .heatinline[**conflict**]
 
 .pull-left[
 ![](https://media.giphy.com/media/lojil9HflxEjOq4gBz/giphy.gif)
 ]
 
-.pull-right[.large[We do have a helpful work-around for when this happens...]]
+.pull-right[.large[We do have a work-around for when this happens...]]
 
 ---
 
-class: inverse 
-
-### .fancy[.salt[Resolving conflict(s)]]
+# .fancy[Resolving conflict(s)] `r emo::ji("sparkling_heart")`
 
 Working from within your `terminal`, the two git commands listed below will: 1) **stash** your local changes (away from your shared repository), and 2) permanantly delete those stashed files
 
 .pull-left[ 
-Take note here that any **new** work you've done locally will be obliviated... this work-around is therefore most useful only when the information on the repository is reasonably considered to be *more* important or *more* up-to-date:
+Take note here that any local work you've done will be obliviated... this work-around is therefore only useful when the information on the repository is reasonably considered to be *more* important or *more* up-to-date than what you have locally:
 
 1. `git stash --include-untracked`
 2. `git stash drop`
@@ -365,53 +367,8 @@ Take note here that any **new** work you've done locally will be obliviated... t
 ???
 Obviously this work-around is only helpful if you're willing to prioritize the repository information over your local information. If you want to use this method but also salvage both conflicting files, you can copy/paste your local code into a Notepad file, and then incorporate after you've pulled from the repository...
 
-
 ---
-
-## Notifications
-
-There is an option to be notified (via e-mail) when somebody makes a push to a repository that you "own". This alerts you to the fact that a change has been made, and reminds you that you should "pull" prior to working on the project. To activate these notifications, navigate to the repository on GitHub, then enter your e-mail address... 
-
-![](notification.png)
----
-
-## Notifications (II)
-
-
-.pull-left[
-![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
-]
-
-.pull-right[
-<font size="5">.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has depreciated that legacy  function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two unowned repositories.]
-]</font>
-
----
-
-## Notifications (III) `r emo::ji("robot")`
-
-1. Sign up for a free [zzBots account](https://www.zzbots.com/)
-2. Connect your new zzBots account to GitHub
-3. Follow the menu to create a new bot 
-4. Indicate bot name and follow prompts (starting with "send email")
-
-![](zzbot.png)
-
----
-
-## Notifications (IV) `r emo::ji("confused")`
-
-Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (projects that you aren't an invited contributor to) `r emo::ji("sad")`
-
-.pull-left[
-![](notification2.png)
-]
-
-.pull-right[
-![](https://media.giphy.com/media/Vfie0DJryAde8/giphy.gif)
-]
-
----
+name: fork
 class: inverse
 
 ## .fancy[Forking & branching]
@@ -432,7 +389,9 @@ Best *developer* practice seems to entail creating branches within which propose
 You can create a new GitHub branch from within RStudio via the `New Branch` option on the `Git` tab of `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio's "Environment/History/etc." pane.
 
 ![](branch.png)
+
 ---
+
 class: inverse
 
 ## .fancy[Defining a new branch (recommendation)]
@@ -447,10 +406,103 @@ class: inverse
 If you still want to work with branches, make sure you understand the broader merge process - branches being ahead and behind each other seems to create chaos 
 
 ---
+name: issue
+## .fancy[Issues (whazzat?)]:
 
-## Pull request:
+.pull-left[You can think of `issues` as computer-based post-it notes.  
 
-When it comes time to *integrate* different versions on your shared project, you may consider a `pull request`. This makes it possible to:
+You'll want to write and manage these directly through GitHub (instead of through `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio), but they are helpful for keeping track of ideas and "things you want to work on" without being overly committal.
+]
+
+.pull-right[
+![](postit.jpg)
+]
+
+???
+Issues can be more elaborate, and can also be [linked to pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword). We're focusing on the simplest of uses here in this tutorial. 
+
+---
+## .fancy[Issues (How to create)]:
+
+1. Navigate to your online repository to [create an issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue):
+![](New Issue.png)
+--
+2. ...and then
+[assign the issue](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to a collaborator, if you'd like to (this isn't necessary): 
+![](Issue.png)
+
+---
+name: notify
+class: inverse
+## .fancy["Notifications"] `r emo::ji("envelope_with_arrow")`
+
+There is an option to be notified (via e-mail) when somebody makes a push to a repository .saltinline[**that you "own"**]. This alerts you to the fact that a change has been made, and reminds you that you should "pull" prior to working on the project. To activate these notifications, navigate to the repository on GitHub, then enter your e-mail address... 
+
+![](notification.png)
+---
+class: inverse
+## Notifications (II)
+
+
+.pull-left[
+![](https://d2itqfkogbve73.cloudfront.net/images/loaders/zzbots-loader-256x256.gif)
+]
+
+.pull-right[
+<font size="5">.fancy[If you wish to recieve notifications from a repository that you collaborate on but do not "own", [GitHub has depreciated that legacy  function](https://github.community/t/get-notified-of-all-commits-to-all-branches-of-a-repo/759). The cleanest workaround that we have found seems to be [to use  zzBots](https://www.youtube.com/watch?v=jssX19RsozQ). Note however that the free version of zzBots limits you to notifications from only two unowned repositories.]
+]</font>
+
+---
+class: inverse
+## Notifications (III) `r emo::ji("robot")`
+
+1. Sign up for a free [zzBots account](https://www.zzbots.com/)
+2. Connect your new zzBots account to GitHub
+3. Follow the menu to create a new bot 
+4. Indicate bot name and follow prompts (starting with "send email")
+
+![](zzbot.png)
+
+---
+class: inverse
+## Notifications (IV) `r emo::ji("confused")`
+
+Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is only useful if you want to keep an eye on other peoples' repositories (projects that you aren't an invited contributor to) `r emo::ji("sad")`
+
+.pull-left[
+![](notification2.png)
+]
+
+.pull-right[
+![](https://media.giphy.com/media/Vfie0DJryAde8/giphy.gif)
+]
+
+---
+
+## .fancy[Pull request]: `r emo::ji("magnet")`
+
+.pull-left[
+![](https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif)
+]
+
+.pull-right[
+**IF** you do use different branches, then at some point you'll want to *integrate* something from a developmental branch onto the main branch. This is typically accomplished via a .heatinline[**pull request**]. 
+
+A .heatinline[**pull request**] answers the question: .large["**What did you change?**"]
+]
+
+???
+Pull requests are also used when you want to contribute to a repository where you're not a formal owner or collaborator - this is very popular with "open source" projects.
+
+---
+
+## .fancy[Pull request]: 
+
+Going through a formal .heatinline[**pull request**] when considering changes among team members places a review frame on the changes. Now you'll be able to share, comment, and receive feedback on your contribution before it's integrated (aka `merged`).
+
+![](review.jpg)
+
+---
 
 1. Get feedback (from other collaborators) on your proposed contribution, &
 2. Document the discussion regarding the contribution
@@ -539,22 +591,11 @@ https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues
 ## Pull request:
 
 ![](pull8.png)
----
-
-## Issues:
-
-[Creating an issue](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue), which is similar to creating a task: 
-
-[How to assign an issue](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request): 
-
-![](New Issue.png)
-
-![](Issue.png)
 
 ---
 class: inverse
 
-###.salt[Let us know if you have any questions]
+###.salt[Let us know if you have any questions!!]
 
 .pull-left[
 ![](https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif)
