@@ -513,7 +513,7 @@ Just like `issues`, you'll want to initiate your pull request from within the re
 
 ---
 
-## .fancy[Pull request] (IV):
+## .fancy[Pull request]: (IV)
 
 .pull-left[.large[First commit your proposed additions to the development branch (within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio), and then follow the `New Pull Request` wizard options]
 
