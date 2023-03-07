@@ -65,7 +65,7 @@ class: inverse
 1. How (and why) to integrate GitHub `r fontawesome("github")` and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
-4. Advanced topics ([slides 22-52](#advanced))
+4. Advanced topics ([slides 22-43](#advanced))
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg){height=500, width=500}
 ???
@@ -73,7 +73,7 @@ Our optimization of this workflow is evolving over time. The most recent renderi
 
 ---
 
-## Why you want to do this: I. `r emo::ji("cool")`
+## Why you want to do this: 1. `r emo::ji("cool")`
 
 .pull-left[
 Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people and limits the number of *different versions* that exist of the collaborative material.]
@@ -83,7 +83,7 @@ Using a version control platform (such as [GitHub](https://www.github.com)) faci
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 ---
-## Why you want to do this: II. `r emo::ji("floppy_disk")`
+## Why you want to do this: 2. `r emo::ji("floppy_disk")`
 
 If you follow the "push" and "pull" recommendations in this tutorial, you will reduce the number of different versions of a project that exist among collaborators and have a shared location where everyone has access to the most recent version of your project.
 
@@ -210,12 +210,12 @@ Now you need a project to collaborate on. You can use [this current presentation
 ]
 
 ???
-You should be able to connect to any project that's *public* on GitHub, so search around a bit on [www.github.com](https://github.com/). You just won't be able to "push" (discussed on a later slide).
+You should be able to connect to any project that's *public* on GitHub, so search around a bit on [www.github.com](https://github.com/). You just won't be able to "push" ([discussed on a later slide](#pushpull)).
 
 ---
 class: inverse
 
-## .fancy[[Connecting to a GitHub project (Step I)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+## .fancy[[Connecting to a GitHub project](https://www.youtube.com/watch?v=YxZ8J2rqhEM) Step I]
 
 First access the GitHub repository that you'd like to connect to (online at [www.github.com](https://github.com/)), then copy the web URL to your clipboard:
 
@@ -224,7 +224,7 @@ First access the GitHub repository that you'd like to connect to (online at [www
 ---
 class: inverse
 
-## .fancy[[Connecting to a GitHub project (Step II)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+## .fancy[[Connecting to a GitHub project](https://www.youtube.com/watch?v=YxZ8J2rqhEM) Step II]
 
 Once you've copied the GitHub repository url, open `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio. Then, within the `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio interface follow the wizard via: File $\rightarrow$ New Project $\rightarrow$ Version Control: 
 
@@ -239,7 +239,7 @@ Once you've copied the GitHub repository url, open `r icon_style(fontawesome("r-
 ---
 class: inverse
 
-## .fancy[[Connecting to a GitHub project (Step III)](https://www.youtube.com/watch?v=YxZ8J2rqhEM)]
+## .fancy[[Connecting to a GitHub project](https://www.youtube.com/watch?v=YxZ8J2rqhEM) Step III]
 
 Continue with $\rightarrow$ Git and then paste the GitHub repository address that you copied from [www.github.com](https://github.com/) into the `Repository URL:` window.
 
@@ -273,7 +273,7 @@ There's a decent YouTube overview of the workflow process  [here](https://www.yo
 ![](commit.png)
 
 ---
-
+name: pushpull
 ## Pushing and Pulling
 
 After working on a project (on your computer), you'll likely want to upload your changes to your Github repository. You do this by accessing the 1. `Git` tab from within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio. Select the documents you'd like to upload and hit the 2. `commit` button. 
@@ -303,7 +303,7 @@ The following slides present topics that an intermediate-level user may be inter
 3. Communicating with others
   + Issues ([30-32](#issue))
   + Notifications ([33-36](#notify))
-  + Pull requests
+  + Pull requests ([37-43](#pullrequest))
 ]
 
 .pull-right[![](https://media.giphy.com/media/8MQXpRuCZFKiA/giphy.gif)
@@ -437,7 +437,7 @@ name: notify
 class: inverse
 ## .fancy["Notifications"] `r emo::ji("envelope_with_arrow")`
 
-There is an option to be notified (via e-mail) when somebody makes a push to a repository .saltinline[**that you "own"**]. This alerts you to the fact that a change has been made, and reminds you that you should "pull" prior to working on the project. To activate these notifications, navigate to the repository on GitHub, then enter your e-mail address... 
+It is possible to be notified (via e-mail) when somebody makes a push to a repository .saltinline[*that you "own"*]. This alerts you to the fact that a change has been made, and reminds you that you should "pull" prior to working on the project. To activate these notifications, navigate to the repository on GitHub, then enter your e-mail address... 
 
 ![](notification.png)
 ---
@@ -479,8 +479,8 @@ Just as a FYI, it sounds helpful, but the GitHub option of "watching"  ...is onl
 ]
 
 ---
-
-## .fancy[Pull request]: `r emo::ji("magnet")`
+name: pullrequest
+## .fancy[Pull request]: (I) `r emo::ji("magnet")`
 
 .pull-left[
 ![](https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif)
@@ -493,11 +493,11 @@ A .heatinline[**pull request**] answers the question: .large["**What did you cha
 ]
 
 ???
-Pull requests are also used when you want to contribute to a repository where you're not a formal owner or collaborator - this is very popular with "open source" projects.
+Pull requests are also used when you want to contribute to a repository where you're not a formal owner or collaborator - this is very popular with "open source" projects. See, for example, the [ethereum](https://github.com/ethereum) network of repositories.
 
 ---
 
-## .fancy[Pull request]: 
+## .fancy[Pull request]: (II) 
 
 Going through a formal .heatinline[**pull request**] when considering changes among team members places a review frame on the changes. Now you'll be able to share, comment, and receive feedback on your contribution before it's integrated (aka `merged`).
 
@@ -505,98 +505,50 @@ Going through a formal .heatinline[**pull request**] when considering changes am
 
 ---
 
-1. Get feedback (from other collaborators) on your proposed contribution, &
-2. Document the discussion regarding the contribution
+## .fancy[Pull request]: (III)
 
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull1.PNG)
-
----
-
-## Pull request (also):
-
-Pull requests are also options for open source projects where you are not formally a collaborator but wish to make a suggestion. This is how some of the alternative coins conduct their operations.
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull2.PNG)
-
-???  
-See, for example, the [ethereum](https://github.com/ethereum) network of repositories.
-
----
-
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull3.png)
-
----
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull4.png)
----
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull5.png)
----
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull6.png)
----
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
-
-![](pull7.png)
----
-## Pull request:
-
-https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+Just like `issues`, you'll want to initiate your pull request from within the repository website [hosted on GitHub](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request):
 
 ![](pull1.PNG)
----
-## Pull request:
 
-![](pull2.PNG)
 ---
-## Pull request:
 
-![](pull3.png)
----
-## Pull request:
+## .fancy[Pull request] (IV):
 
+.pull-left[.large[First commit your proposed additions to the development branch (within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio), and then follow the `New Pull Request` wizard options]
+
+]
+
+.pull-right[
 ![](pull4.png)
----
-## Pull request:
+]
 
-![](pull5.png)
 ---
-## Pull request:
+## .fancy[Pull request]: (V)
 
+.left-column[
+![](mainstreet.png)
+]
+
+.right-column[
+There will be an option of "which branch to `pull` to" - this will be the primary project branch (typically named `main`):  
+<br />
 
 ![](pull6.png)
----
-## Pull request:
+]
 
-![](pull7.png)
 ---
-## Pull request:
+## .fancy[Pull request]: (Viola! `r emo::ji("violin")`)
+
+There is a final option of submitting a "full pull request" or a mere draft. Go ahead and submit the `Create Pull Request` (you don't need no stinkin' draft)!
 
 ![](pull8.png)
 
 ---
 class: inverse
 
-###.salt[Let us know if you have any questions!!]
+###.salt[That's it for now...]
+####.salt[...let us know if you have any questions!!]
 
 .pull-left[
 ![](https://media.giphy.com/media/xT0xeuOy2Fcl9vDGiA/giphy.gif)
