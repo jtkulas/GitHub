@@ -65,7 +65,7 @@ class: inverse
 1. How (and why) to integrate GitHub `r fontawesome("github")` and `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio 
 2. Connecting individual accounts to shared projects
 3. Committing, pushing, and pulling 
-4. Advanced topics [(slides 22-52)](#advanced)
+4. Advanced topics ([slides 22-52](#advanced))
 
 ![](https://cdn.pixabay.com/photo/2015/07/31/11/45/library-869061_1280.jpg){height=500, width=500}
 ???
@@ -73,7 +73,7 @@ Our optimization of this workflow is evolving over time. The most recent renderi
 
 ---
 
-## Why you want to do this - 1: `r emo::ji("cool")`
+## Why you want to do this: I. `r emo::ji("cool")`
 
 .pull-left[
 Using a version control platform (such as [GitHub](https://www.github.com)) facilitates collaboration on projects from multiple people and limits the number of *different versions* that exist of the collaborative material.]
@@ -83,7 +83,7 @@ Using a version control platform (such as [GitHub](https://www.github.com)) faci
 
 ![](https://cdn.pixabay.com/photo/2017/02/20/14/18/business-2082639_1280.jpg)
 ---
-## Why you want to do this - 2: `r emo::ji("floppy_disk")`
+## Why you want to do this: II. `r emo::ji("floppy_disk")`
 
 If you follow the "push" and "pull" recommendations in this tutorial, you will reduce the number of different versions of a project that exist among collaborators and have a shared location where everyone has access to the most recent version of your project.
 
@@ -136,8 +136,9 @@ class: inverse
 ![](https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif)
 ]
 
-.pull-right[
-+ <font size = "6">You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.</font> 
+.pull-right[  
+<br />
+<font size = "6">You will most likely need this information when connecting to GitHub from within `r icon_style(fontawesome("r-project"), fill="royalblue")` studio.</font> 
 ]
 
 ???
@@ -296,12 +297,12 @@ name: advanced
 
 The following slides present topics that an intermediate-level user may be interested in (e.g., someone who has already mastered setting up GitHub projects within `r icon_style(fontawesome("r-project"), fill="royalblue")` Studio). These "advanced" topics include:  
 
-1. Inviting collaborators [(23-24)](#invite)
-  + Resolving conflicts [(25-26)](#resolve)
-2. Structuring (forking and branching) [(27-29)](#fork)
+1. Inviting collaborators ([23-24](#invite))
+  + Resolving conflicts ([25-26](#resolve))
+2. Structuring (forking and branching) ([27-29](#fork))
 3. Communicating with others
-  + Issues [30-32](#issue)
-  + Notifications [(33-36)](#notify)
+  + Issues ([30-32](#issue))
+  + Notifications ([33-36](#notify))
   + Pull requests
 ]
 
